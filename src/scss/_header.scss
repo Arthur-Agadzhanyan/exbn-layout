@@ -1,0 +1,38 @@
+.header{
+    position: sticky;
+    top: 0;
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo{
+        margin: 0 auto;
+        transform: translateX(18px);
+    }
+
+    .header__button{
+        display: block;
+        background: transparent;
+        color: #fff;
+        border: none;
+        transition: all .2s linear;
+        cursor: pointer;
+
+        span{
+            margin-left: 8px;
+            padding-bottom: 5px;
+            border-bottom: 4px solid $orange;
+            transition: all .2s linear;
+
+            @include text(#fff,14px,600);
+        }
+        
+        &:hover{
+            span{
+                padding-bottom: 0px;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.button{
+    position: relative;
+    @include text(#fff,16px,600);
+    &-filled{
+        display: block;
+        padding: 19px 44px;
+        background: $orange;
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        cursor: pointer;
+
+        span{
+            position: relative;
+            z-index: 2;
+            transition: all .2s linear;
+        }
+
+        &:after{
+            content: '';
+            height: 120%;
+            width: 120%;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: -70%;
+            left: -60%;
+            z-index: 1;
+            background: #fff;
+            transition: all .2s linear;
+        }
+
+        &:hover{
+            span{
+                color: $orange;
+            }
+            &:after{
+                transform: scale(3) rotate(0deg);
+                top: 0%;
+                left: 0%;
+            }
+        }
+    }
+}
