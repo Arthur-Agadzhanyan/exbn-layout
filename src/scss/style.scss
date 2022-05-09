@@ -163,4 +163,17 @@ a{
             }
         }
     }
+
+    .about__company{
+        padding: 69px 16px 110px 16px;
+        background: #E9623E;
+
+        .company__content{
+            max-width: 830px;
+            margin: 0 auto;
+            @include text(#FFF,24px,400,38px);
+            text-transform: uppercase;
+            letter-spacing: 0.148em;
+        }
+    }
 }

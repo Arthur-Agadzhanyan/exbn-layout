@@ -828,3 +828,19 @@ a {
       -ms-transform: translateY(30%);
           transform: translateY(30%);
 }
+
+.main_page .about__company {
+  padding: 69px 16px 110px 16px;
+  background: #E9623E;
+}
+
+.main_page .about__company .company__content {
+  max-width: 830px;
+  margin: 0 auto;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  text-transform: uppercase;
+  letter-spacing: 0.148em;
+}
