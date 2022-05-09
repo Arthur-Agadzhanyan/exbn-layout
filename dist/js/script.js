@@ -31,3 +31,11 @@ function testWebP(callback) {
  //# sourceMappingURL=swiper-bundle.min.js.map;
 
 AOS.init()
+
+
+const navbarBtn = document.getElementById('navbar_btn')
+const navbarPoppup = document.getElementById('navbar_poppup')
+
+navbarBtn.addEventListener('click',(e)=>{
+    navbarPoppup.classList.toggle('navbar_poppup-closed')
+})
