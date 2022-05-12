@@ -164,7 +164,7 @@ a{
         }
     }
 
-    .about__company{
+    .about_company{
         padding: 69px 16px 110px 16px;
         background: #E9623E;
 
@@ -174,6 +174,37 @@ a{
             @include text(#FFF,24px,400,38px);
             text-transform: uppercase;
             letter-spacing: 0.148em;
+        }
+    }
+
+    .company_mission{
+        background: #131313;
+        padding: 75px 15px;
+
+        .mission__container{
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .mission__content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+
+            .content__title{
+                transform: rotate(-90deg);
+                @include text(#fff,48px,600,59px);
+                background: $orange;
+                text-transform: uppercase;
+                padding: 6px 25px;
+                margin-top: 10px;
+            }
+
+            .content__text{
+                @include text(#fff,48px,600,59px);
+            }
         }
     }
 }
