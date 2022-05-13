@@ -68,27 +68,44 @@ a{
 
 .center_line{
     position: absolute;
-    // top: 223px;
+    top: 0;
     left: calc(50% - 1px - 50px);
     width: 1px;
-    height: 100vh;
+    height: 100%;
     background: #000;
+
+    &-intro{
+        bottom: 0;
+        height: 75vh;
+            
+        top: auto;
+    }
+}
+
+.right_line{
+    position: absolute;
+    top: 0;
+    right: 91px;
+    width: 1px;
+    height: 100%;
+    background: #000;
+
+    &-intro{
+        bottom: 0;
+        height: 75vh;
+            
+        top: auto;
+    }
 }
 
 .main_page{
     .intro{
         min-height: calc(100vh - 94px);
-        // padding-bottom: 137px;
+        padding-bottom: 157px;
         position: relative;
-        .center_line{
-            bottom: 0;
-            height: 75vh;
-            
-            top: auto;
-        }
         .container{
             height: 100%;
-            padding: 0px 10px;
+            max-width: 1588px;
         }
         &__content{
             height: 100%;
@@ -142,7 +159,6 @@ a{
                 background: url('../img/intro/windmill__area.svg') center no-repeat;
                 background-size: 100% auto;
                 min-height: 591px;
-                
 
                 img{
                     display: block;
@@ -176,6 +192,44 @@ a{
             letter-spacing: 0.148em;
         }
     }
+
+    .automation {
+        position: relative;
+        padding-bottom: 96px;
+
+        .automation__content {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+
+            .content__info {
+                position: absolute;
+                left: 63px;
+                z-index: 2;
+                max-width: 500px;
+                
+                .info__suptitle {
+                    @include text(#fff, 24px,600);
+                    margin-bottom: 24px;
+                }
+                .info__title {
+                    @include text(#fff, 64px,600,68px)
+                }
+            }
+            
+            .content__video {
+                position: relative;
+                z-index: 1;
+                flex: 0 1 79%;
+                margin-top: -40px;
+            margin-left: auto;
+                video{
+                    width: 100%;
+                }
+            }
+        }    
+    } 
 
     .company_mission{
         background: #131313;

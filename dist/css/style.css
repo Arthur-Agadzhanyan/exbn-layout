@@ -564,6 +564,7 @@ template {
   position: sticky;
   top: 0;
   padding: 30px;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -716,26 +717,43 @@ a {
 
 .center_line {
   position: absolute;
+  top: 0;
   left: calc(50% - 1px - 50px);
   width: 1px;
-  height: 100vh;
+  height: 100%;
   background: #000;
 }
 
-.main_page .intro {
-  min-height: calc(100vh - 94px);
-  position: relative;
-}
-
-.main_page .intro .center_line {
+.center_line-intro {
   bottom: 0;
   height: 75vh;
   top: auto;
 }
 
+.right_line {
+  position: absolute;
+  top: 0;
+  right: 91px;
+  width: 1px;
+  height: 100%;
+  background: #000;
+}
+
+.right_line-intro {
+  bottom: 0;
+  height: 75vh;
+  top: auto;
+}
+
+.main_page .intro {
+  min-height: calc(100vh - 94px);
+  padding-bottom: 157px;
+  position: relative;
+}
+
 .main_page .intro .container {
   height: 100%;
-  padding: 0px 10px;
+  max-width: 1588px;
 }
 
 .main_page .intro__content {
@@ -843,6 +861,57 @@ a {
   line-height: 38px;
   text-transform: uppercase;
   letter-spacing: 0.148em;
+}
+
+.main_page .automation {
+  position: relative;
+  padding-bottom: 96px;
+}
+
+.main_page .automation .automation__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_page .automation .automation__content .content__info {
+  position: absolute;
+  left: 63px;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.main_page .automation .automation__content .content__info .info__suptitle {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.main_page .automation .automation__content .content__info .info__title {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 68px;
+}
+
+.main_page .automation .automation__content .content__video {
+  position: relative;
+  z-index: 1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 79%;
+          flex: 0 1 79%;
+  margin-top: -40px;
+  margin-left: auto;
+}
+
+.main_page .automation .automation__content .content__video video {
+  width: 100%;
 }
 
 .main_page .company_mission {
