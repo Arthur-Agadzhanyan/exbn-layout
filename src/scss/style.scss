@@ -64,6 +64,13 @@ a{
     max-width: 1538px;
     margin: 0 auto;
     padding: 0px 47px;
+
+    &-right{
+        max-width: 88vw;
+        margin-left: auto;
+        margin-right: 0;
+        padding-right: 0px;
+    }
 }
 
 .center_line{
@@ -99,6 +106,10 @@ a{
 }
 
 .main_page{
+    .section_title{
+        @include text(#fff,48px,600,59px)
+    }
+
     .intro{
         min-height: calc(100vh - 94px);
         padding-bottom: 157px;
@@ -232,7 +243,7 @@ a{
     } 
 
     .company_mission{
-        background: #131313;
+        background: $grey-2;
         padding: 75px 15px;
 
         .mission__container{
@@ -343,7 +354,7 @@ a{
                             top: -70%;
                             left: -60%;
                             z-index: 1;
-                            background: #131313;
+                            background: $grey-2;
                             transition: all .2s linear;
                         }
                     }
@@ -355,7 +366,7 @@ a{
             .how_work__content {
                 position: relative;
                 z-index: 2;
-                background: #131313;
+                background: $grey-2;
                 padding-top: 37px;
                 padding-bottom: 48px;
                 margin-top: 94px;
@@ -518,5 +529,112 @@ a{
             }
         }
         
+    }
+
+    .partners {
+        background: #000;
+        .partners__content {
+            padding: 54px 0px 93px 0px;
+
+            .content__slider{
+                color: #fff;
+                
+                
+                .slider__slide{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #fff;
+                    min-height: 276px;
+
+                    &-lower{
+                        img{
+                            max-width: 100%;
+                            margin-bottom: -20px;
+                            margin-right: -10px;
+                        }
+                    }
+
+                    &-higher{
+                        img{
+                            max-width: 100%;
+                            margin-top: -40px;
+                        }
+                    }
+
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .news {
+        position: relative;
+        .news__content {
+            padding: 54px 0px 93px 0px;
+
+            .content__slider{
+                margin-top: 54px;
+                color: #fff;
+                
+                .slider__slide{
+                    display: flex;
+                    // justify-content: center;
+                    align-items: flex-end;
+                    min-height: 422px;
+
+                    position: relative;
+
+                    .slide__image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: -1;
+                    }
+
+                    .slide__info {
+                        padding: 25px 25px 30px 41px;
+
+                        .info__title {
+                            @include text(#fff,24px,600,36px);
+                            margin-bottom: 10px;
+                        }
+                        .info__text {
+                            @include text(#fff,16px,400,20px);
+                        }
+
+                        .info__link{
+                            display: flex;
+                            align-items: center;
+                            margin-top: 15px;
+                            margin-right: auto;
+
+                            transition: all .2s linear;
+
+                            span{
+                                margin-right: 5px;
+                                @include text(#fff,16px,400,20px);
+                                transition: all .2s linear;
+                            }
+
+                            img,span{
+                                display: block;
+                            }
+
+                            &:hover{
+                                span{
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
 }
