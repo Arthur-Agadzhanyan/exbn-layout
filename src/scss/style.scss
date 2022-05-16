@@ -83,7 +83,7 @@ a{
 
     &-intro{
         bottom: 0;
-        height: 75vh;
+        height: 77vh;
             
         top: auto;
     }
@@ -99,8 +99,7 @@ a{
 
     &-intro{
         bottom: 0;
-        height: 75vh;
-            
+        height: 77vh;
         top: auto;
     }
 }
@@ -118,7 +117,10 @@ a{
             height: 100%;
             max-width: 1588px;
         }
+
         &__content{
+            position: relative;
+            z-index: 2;
             height: 100%;
             display: flex;
             align-items: flex-start;
@@ -166,6 +168,8 @@ a{
             }
 
             .content__image {
+                position: relative;
+                z-index: 2;
                 flex: 0 1 40%;
                 background: url('../img/intro/windmill__area.svg') center no-repeat;
                 background-size: 100% auto;
@@ -594,6 +598,8 @@ a{
                         right: 0;
                         bottom: 0;
                         z-index: -1;
+                        width: 100%;
+                        min-height: 100%;
                     }
 
                     .slide__info {
