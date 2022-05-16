@@ -313,6 +313,8 @@ a{
                 }
     
                 .content__advantages{
+                    position: relative;
+                    z-index: 2;
                     flex: 0 1 45%;
 
                     display: flex;
@@ -367,6 +369,7 @@ a{
         }
 
         .products__how_work {
+            
             .how_work__content {
                 position: relative;
                 z-index: 2;
@@ -388,7 +391,7 @@ a{
 
                     .list__item {
                         flex: 0 1 43%;
-
+                        
                         display: flex;
 
                         .item__image {
@@ -421,6 +424,8 @@ a{
             margin-top: 65px;
 
             .pulse__content{
+                position: relative;
+                    z-index: 2;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
