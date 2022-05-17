@@ -29,6 +29,11 @@
             z-index: 1;
             background: #fff;
             transition: all .2s linear;
+
+            @media screen and (max-width: 400px) {
+                height: 115%;
+                width: 115%;
+            }
         }
 
         &:hover{
@@ -72,6 +77,8 @@
             z-index: 1;
             background: $orange;
             transition: all .2s linear;
+
+            
         }
 
         &:hover{
@@ -81,5 +88,11 @@
                 left: 0%;
             }
         }
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 14px;
+        padding: 16px 20px;
+        min-width: 250px;
     }
 }
