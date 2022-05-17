@@ -1191,7 +1191,7 @@ a {
 
 .main_page .company__products .products__current_ml .current_ml__content .content__info .info__logo .logo__exebenus img {
   display: block;
-  height: 30px;
+  max-height: 30px;
 }
 
 .main_page .company__products .products__current_ml .current_ml__content .content__info .info__logo .logo__current_ml {
@@ -1200,7 +1200,7 @@ a {
 
 .main_page .company__products .products__current_ml .current_ml__content .content__info .info__logo .logo__current_ml img {
   display: block;
-  height: 40px;
+  max-height: 40px;
 }
 
 .main_page .company__products .products__current_ml .current_ml__content .content__info .info__text {
@@ -1352,6 +1352,14 @@ a {
   margin-top: 65px;
 }
 
+.main_page .company__products .products__pulse .mobile_text {
+  display: none;
+}
+
+.main_page .company__products .products__pulse .desktop_text {
+  display: block;
+}
+
 .main_page .company__products .products__pulse .pulse__content {
   position: relative;
   z-index: 2;
@@ -1379,7 +1387,7 @@ a {
 
 .main_page .company__products .products__pulse .pulse__content .content__info .info__logo .logo__exebenus img {
   display: block;
-  height: 30px;
+  max-height: 30px;
 }
 
 .main_page .company__products .products__pulse .pulse__content .content__info .info__logo .logo__pulse {
@@ -1388,7 +1396,7 @@ a {
 
 .main_page .company__products .products__pulse .pulse__content .content__info .info__logo .logo__pulse img {
   display: block;
-  height: 40px;
+  max-height: 40px;
 }
 
 .main_page .company__products .products__pulse .pulse__content .content__info .info__text {
@@ -1405,17 +1413,17 @@ a {
   z-index: 2;
 }
 
-.main_page .company__products .products__pulse .pulse__content .content__info .info__text:after {
+.main_page .company__products .products__pulse .pulse__content .content__info .info__text span:after {
   content: '';
   height: 22px;
   width: 102.2%;
-  -webkit-transform: translateX(-2.2%);
-      -ms-transform: translateX(-2.2%);
-          transform: translateX(-2.2%);
+  -webkit-transform: translateX(-1.1%);
+      -ms-transform: translateX(-1.1%);
+          transform: translateX(-1.1%);
   position: absolute;
   bottom: -3px;
   left: 0;
-  z-index: 1;
+  z-index: -1;
   background: #E9623E;
 }
 
@@ -1495,6 +1503,10 @@ a {
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
+}
+
+.main_page .company__products .mobile_btn {
+  display: none;
 }
 
 .main_page .partners {
@@ -1626,6 +1638,16 @@ a {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 1600px) {
+  .main_page .company__products .products__pulse .mobile_text {
+    display: block;
+  }
+
+  .main_page .company__products .products__pulse .desktop_text {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   .right_line {
     right: 81px;
@@ -1665,6 +1687,18 @@ a {
 
   .main_page .intro__content {
     padding-top: 50px;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__advantages {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .main_page .company__products .products__how_work .how_work__content .content__list {
+    max-width: 100%;
   }
 }
 
@@ -1707,6 +1741,17 @@ a {
   .main_page .intro {
     padding-bottom: 70px;
   }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__advantages {
+    margin-right: -40px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 55%;
+            flex: 0 1 55%;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__text span:after {
+    height: 18px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1743,6 +1788,19 @@ a {
     font-weight: 600;
     line-height: 58px;
   }
+
+  .main_page .company__products .products__how_work .how_work__content .content__list .list__item .item__info .info__title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1752,6 +1810,10 @@ a {
 
   .wrapper {
     margin-left: 0px;
+  }
+
+  .container {
+    padding: 0px 24px;
   }
 
   .center_line {
@@ -1884,6 +1946,122 @@ a {
   .main_page .company_mission {
     padding: 165px 15px;
   }
+
+  .main_page .company__products .products__how_work .how_work__content .content__list .list__item {
+    margin-bottom: 38px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content .content__list .list__item .item__info {
+    max-width: 70%;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content .content__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content {
+    padding-left: 48px;
+  }
+
+  .main_page .company__products .beams {
+    min-height: 107px;
+    margin-bottom: 0;
+  }
+
+  .main_page .company__products .products__training .training__content {
+    padding-top: 86px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main_page .company__products .products__current_ml .current_ml__content .content__advantages .advantages__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48.5%;
+            flex: 0 1 48.5%;
+    margin-bottom: 20px;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__advantages {
+    margin-right: 0px;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__btn {
+    margin-top: 40px;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 90%;
+            flex: 0 1 90%;
+    margin-bottom: 40px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__text {
+    margin-bottom: 0px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 31%;
+            flex: 0 1 31%;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 40px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .main_page .company__products .products__training .training__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .main_page .company__products .products__training .training__content .content__text {
+    max-width: 90%;
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+
+  .main_page .company__products .products__training .training__content .content__info .info__text .text__main {
+    margin-bottom: 24px;
+  }
+
+  .main_page .company__products .mobile_btn {
+    display: block;
+  }
+
+  .main_page .company__products .desktop_btn {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1893,10 +2071,6 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  .container {
-    padding: 0px 24px;
-  }
-
   .main_page .intro .container {
     padding: 0px 34px;
   }
@@ -1947,6 +2121,73 @@ a {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__advantages .advantages__item .item__text {
+    max-width: 171px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content {
+    padding: 0;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content .content__text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 2px;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content {
+    padding-left: 24px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content {
+    padding: 0;
+  }
+
+  .main_page .company__products .products__pulse {
+    margin-top: 80px;
+  }
+
+  .main_page .company__products .beams {
+    margin-top: 60px;
+    min-height: 87px;
+  }
+
+  .main_page .company__products .products__training .training__content {
+    padding-left: 0px;
+  }
+
+  .main_page .company__products .products__training .training__content .content__info {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .main_page .company__products .products__training .training__content .content__info .info__text .text__main {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 0px;
+  }
+
+  .main_page .company__products .products__training .training__content .content__info .info__image {
+    margin-top: 0px;
+  }
+
+  .main_page .company__products .products__training .training__content .content__text {
+    max-width: 100%;
+  }
+
+  .main_page .company__products {
+    padding-top: 80px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1976,6 +2217,29 @@ a {
 
   .main_page .automation .automation__content .content__video {
     height: 85vh;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__list .list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__list .list__item .item__image {
+    margin-bottom: 0px;
+    margin-right: 22px;
+    min-width: 60px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2086,6 +2350,121 @@ a {
     padding: 91px 15px;
     padding-right: 0px;
   }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__info .info__logo .logo__exebenus img {
+    max-width: 60%;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__info .info__logo .logo__current_ml img {
+    max-width: 80%;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__info .info__logo .logo__current_ml {
+    margin-bottom: 36px;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__info .info__text {
+    margin-bottom: 36px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__info .info__text span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__info .info__text span:after {
+    content: '';
+    height: 14px;
+    width: 103%;
+    -webkit-transform: translateX(-1.5%);
+        -ms-transform: translateX(-1.5%);
+            transform: translateX(-1.5%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #E9623E;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content .content__title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content .content__list .list__item .item__info .info__title {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 3px;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content .content__list .list__item .item__info .info__text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content .content__list .list__item .item__info {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: initial;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content {
+    padding: 60px 24px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__logo .logo__exebenus img {
+    max-width: 60%;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__logo .logo__pulse img {
+    max-width: 80%;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__logo .logo__pulse {
+    margin-bottom: 36px;
+  }
+
+  .main_page .company__products .products__training .training__content .content__info {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .main_page .company__products .products__training .training__content .content__info .info__image img {
+    max-height: 62px;
+  }
+
+  .main_page .company__products .products__training .training__content .content__info .info__text .text__main {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-bottom: 0px;
+  }
+
+  .main_page .company__products .products__training .training__content .content__text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 500px) and (max-width: 340px) {
@@ -2101,6 +2480,34 @@ a {
 
   .main_page .intro__content .content__image .image__windmill {
     margin-top: 160px;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__advantages .advantages__item .item__image img {
+    max-height: 34px;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__advantages .advantages__item .item__text {
+    max-width: 141px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__advantages .advantages__item {
+    margin-bottom: 14px;
+    padding: 10px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__text span:after {
+    height: 14px;
   }
 }
 
@@ -2151,6 +2558,27 @@ a {
   .main_page .about_company .company__content strong {
     font-weight: 600;
   }
+
+  .main_page .company__products .products__current_ml .current_ml__content .content__advantages .advantages__item .item__text {
+    max-width: 121px;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content .content__list .list__item .item__image {
+    margin-right: 16px;
+    min-width: 61px;
+  }
+
+  .main_page .company__products .products__how_work .how_work__content .content__list .list__item .item__image img {
+    max-height: 38px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__logo .logo__exebenus img {
+    max-height: 14px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__logo .logo__pulse img {
+    max-height: 24px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -2167,6 +2595,27 @@ a {
     font-size: 24px;
     font-weight: 600;
     line-height: 39px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .main_page .company__products .products__current_ml .current_ml__content .content__advantages .advantages__item .item__text {
+    max-width: 101px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .main_page .company__products .products__pulse .pulse__content .content__info .info__text span:after {
+    height: 12px;
   }
 }
 
