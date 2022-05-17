@@ -570,7 +570,7 @@ template {
   margin: 0 auto;
   width: 100%;
   max-width: 1590px;
-  padding: 0px 30px;
+  padding: 0px 48px;
 }
 
 .footer__content .content__top {
@@ -1519,6 +1519,7 @@ a {
 
 .main_page .partners .partners__content .content__slider {
   color: #fff;
+  margin-top: 54px;
 }
 
 .main_page .partners .partners__content .content__slider .slider__slide {
@@ -1801,6 +1802,14 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
+  .footer__content .content__top .top__contacts .contacts__map {
+    margin-right: 0px;
+  }
+
+  .footer__content .content__bottom .bottom__link {
+    margin-left: 70px;
+  }
+
   .main_page .intro__content .content__info {
     margin-top: 50px;
   }
@@ -1868,6 +1877,22 @@ a {
 @media screen and (max-width: 1100px) {
   .navbar {
     display: none;
+  }
+
+  .footer__content .content__top .top__contacts .contacts__map {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    min-height: 45vh;
+  }
+
+  .footer__content .content__top .top__contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer {
+    margin-left: 0px;
   }
 
   .wrapper {
@@ -2067,6 +2092,25 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
+  .footer__content .content__bottom .bottom__link {
+    margin-left: 0px;
+    margin-top: 16px;
+  }
+
+  .footer__content .content__bottom .bottom__digital {
+    margin-top: 10px;
+  }
+
+  .footer__content .content__bottom {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .main_page .company__products .products__current_ml .current_ml__content .content__advantages .advantages__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 48.5%;
@@ -2155,6 +2199,23 @@ a {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .footer__content .content__top .top__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer__content .content__top .top__header .header__item {
+    margin-bottom: 24px;
+  }
+
+  .footer__content .content__top .top__header .header__item:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .main_page .company_mission {
     padding: 125px 15px;
@@ -2166,6 +2227,25 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+  .footer .container {
+    padding: 0px 24px;
+  }
+
+  .footer__content .content__top .top__header .header__item-active:after {
+    height: 22px;
+  }
+
+  .footer__content .content__top .top__header {
+    margin-bottom: 40px;
+  }
+
+  .footer__content .content__top .top__header .header__item {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+
   .main_page .intro .container {
     padding: 0px 34px;
   }
@@ -2322,6 +2402,29 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .footer__content .content__top .top__contacts .contacts__info .item__image {
+    min-width: 30px;
+  }
+
+  .footer__content .content__top .top__contacts .contacts__info .item__image img {
+    max-height: 30px;
+  }
+
+  .footer__content .content__top .top__contacts .contacts__info .letter__image img {
+    max-height: 20px;
+  }
+
+  .footer__content .content__top .top__contacts .contacts__info .item__text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .footer__content .content__top {
+    padding-bottom: 40px;
+  }
+
   .main_page .intro__content .content__image {
     max-width: 100%;
     -webkit-transform: scale(1);
@@ -2384,6 +2487,28 @@ a {
 }
 
 @media screen and (max-width: 500px) {
+  .footer__content .content__top .top__header .header__item {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+
+  .footer__content .content__top .top__contacts .contacts__info .item__text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .footer__content .content__top .top__contacts .contacts__map {
+    min-height: 22vh;
+  }
+
+  .footer {
+    padding-bottom: 40px;
+  }
+
   .main_page .section_title {
     color: #fff;
     font-size: 24px;
@@ -2663,6 +2788,28 @@ a {
 }
 
 @media screen and (max-width: 400px) {
+  .footer__content .content__bottom .bottom__logo {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .footer__content .content__bottom .bottom__logo img {
+    max-width: 198px;
+  }
+
+  .footer__content .content__bottom .bottom__link {
+    color: #C4C4C4;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .footer__content .content__bottom .bottom__digital img {
+    max-width: 149px;
+  }
+
   .button-filled:after {
     height: 115%;
     width: 115%;
@@ -2769,6 +2916,18 @@ a {
 }
 
 @media screen and (max-width: 350px) {
+  .footer__content .content__top .top__header .header__item-active:after {
+    height: 15px;
+    bottom: 0px;
+  }
+
+  .footer__content .content__top .top__header .header__item {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+
   .main_page .company__products .products__current_ml .current_ml__content .content__advantages .advantages__item .item__text {
     max-width: 101px;
     color: #fff;

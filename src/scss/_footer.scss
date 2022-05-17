@@ -7,7 +7,11 @@
         margin: 0 auto;
         width: 100%;
         max-width: 1590px;
-        padding: 0px 30px;
+        padding: 0px 48px;
+
+        @media screen and (max-width: 700px) {
+            padding: 0px 24px;
+        }
     }
 
     &__content{
@@ -23,7 +27,6 @@
                     position: relative;
                     margin-right: 47px;
                     
-    
                     &-active{
                         span {
                             position: relative;
@@ -40,29 +43,78 @@
                             left: 0;
                             z-index: 1;
                             background: $orange;
+
+                            @media screen and (max-width: 700px) {
+                                height: 22px;
+                            }
+                            @media screen and (max-width: 350px) {
+                                height: 15px;
+                                bottom: 0px;
+                            }
                         }
+                    }
+                }
+
+                @media screen and (max-width: 900px) {
+                    flex-wrap: wrap;
+
+                    .header__item{
+                        margin-bottom: 24px;
+                        &:first-child{
+                            flex: 0 1 100%;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 700px) {
+                    margin-bottom: 40px;
+
+                    .header__item{
+                        @include text(#fff,36px,600,29px);
+                    }
+                }
+
+                @media screen and (max-width: 500px) {
+                    .header__item{
+                        @include text(#fff,24px,600,29px);
+                    }
+                }
+
+                @media screen and (max-width: 350px) {
+                    .header__item{
+                        @include text(#fff,20px,600,29px);
                     }
                 }
             }
 
             .top__contacts {
                 display: flex;
-                    justify-content: space-between;
+                justify-content: space-between;
+
                 .contacts__info {
-                    
                     .info__item {
                         display: flex;
                         align-items: flex-start;
-                        .item__image {
-                            
-                        }
-                        .item__text {
-        
-                        }
                     }
+
                     .item__image {
                         min-width: 60px;
+                        @media screen and (max-width: 600px) {
+                            min-width: 30px;
+                            img{
+                                max-height: 30px;
+                            }
+                        }
                     }
+
+                    .letter__image{
+                        @media screen and (max-width: 600px) {
+                            img{
+                                max-height: 20px;
+                            }
+                        }
+                    }
+                    
                     .item__text {
                         margin-left: 20px;
                         max-width: 423px;
@@ -73,6 +125,13 @@
                         &-link{
                             text-decoration: underline;
                         }
+
+                        @media screen and (max-width: 600px) {
+                            @include text(#fff,20px,600,24px);
+                        }
+                        @media screen and (max-width: 500px) {
+                            @include text(#fff,16px,600,20px);
+                        }
                     }
                 }
                 .contacts__map {
@@ -80,7 +139,26 @@
                     min-height: 367px;
                     margin-right: 60px;
                     margin-top: 5px;
+
+                    @media screen and (max-width: 1200px) {
+                        margin-right: 0px;
+                    }
+                    @media screen and (max-width: 1100px) {
+                        flex: 0 1 100%;
+                        min-height: 45vh;
+                    }
+                    @media screen and (max-width: 500px) {
+                        min-height: 22vh;
+                    }
                 } 
+
+                @media screen and (max-width: 1100px) {
+                   flex-wrap: wrap;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                padding-bottom: 40px;
             }
         }
         
@@ -94,7 +172,14 @@
             .bottom__logo {
                 .logo__text {
                     margin-top: 20px;
-                    @include text(#fff,16px,400,20px)
+                    @include text(#fff,16px,400,20px);
+                }
+
+                @media screen and (max-width: 400px) {
+                    @include text(#fff,12px,400,15px);
+                    img{
+                        max-width: 198px
+                    }
                 }
             }
             
@@ -108,10 +193,44 @@
                 &:hover{
                     color: #fff;
                 }
+
+                @media screen and (max-width: 1200px) {
+                    margin-left: 70px;
+                }
+                @media screen and (max-width: 1000px) {
+                    margin-left: 0px;
+                    margin-top: 16px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    @include text(#C4C4C4,12px,400,15px);
+                }
             }
             .bottom__digital {
                 margin-left: auto;
+
+                @media screen and (max-width: 1000px) {
+                    margin-top: 10px;
+                }
+                @media screen and (max-width: 400px) {
+                    img{
+                        max-width: 149px
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1000px) {
+                align-items: flex-start;
+                flex-direction: column;
             }
         }
+    }
+
+    @media screen and (max-width: 1100px) {
+        margin-left: 0px;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-bottom: 40px;
     }
 }
