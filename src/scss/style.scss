@@ -1441,6 +1441,11 @@ a{
 
     .news {
         position: relative;
+
+        .container{
+            padding-right: 0 !important;
+        }
+
         .news__content {
             padding: 54px 0px 93px 0px;
 
@@ -1453,6 +1458,7 @@ a{
                     // justify-content: center;
                     align-items: flex-end;
                     min-height: 422px;
+                    overflow: hidden;
 
                     position: relative;
 
@@ -1465,6 +1471,7 @@ a{
                         z-index: -1;
                         width: 100%;
                         min-height: 100%;
+                        margin: 0 auto;
                     }
 
                     .slide__info {
@@ -1473,9 +1480,25 @@ a{
                         .info__title {
                             @include text(#fff,24px,600,36px);
                             margin-bottom: 10px;
+
+                            @media screen and (max-width: 1200px) {
+                                @include text(#fff,22px,600,30px);
+                            }
+
+                            @media screen and (max-width: 650px) {
+                               @include text(#fff,18px,600,22px); 
+                            }
                         }
                         .info__text {
                             @include text(#fff,16px,400,20px);
+
+                            @media screen and (max-width: 650px) {
+                                @include text(#fff,14px,400,18px); 
+                            }
+
+                            @media screen and (max-width: 400px) {
+                                @include text(#fff,12px,400,15px); 
+                            }
                         }
 
                         .info__link{
@@ -1502,9 +1525,32 @@ a{
                                 }
                             }
                         }
+
+                        @media screen and (max-width: 1200px) {
+                            padding: 25px 25px 30px 25px;
+                        }
+                        @media screen and (max-width: 650px) {
+                            padding: 16px 20px 20px 17px;
+                        }
                     }
-                    
+                    @media screen and (max-width: 700px) {
+                        min-height: 390px;
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        min-height: 364px;
+                    }
+                    @media screen and (max-width: 400px) {
+                        min-height: 354px;
+                    }
                 }
+            }
+
+            @media screen and (max-width: 1100px) {
+                padding-left: 24px;
+            }
+            @media screen and (max-width: 700px) {
+                padding-left: 0px;
             }
         }
     }

@@ -17,13 +17,30 @@ const mainPagePartnersSlider = new Swiper('#main_page-partners_slider', {
 });
 
 const mainPageNewsSlider = new Swiper('#main_page-news_slider', {
-    
     speed: 1000,
     spaceBetween: 16,
     loop:true,
     breakpoints:{
+        320:{
+            slidesPerView: 1.1,
+        },
+        375:{
+            slidesPerView: 1.2,
+        },
+        550:{
+            slidesPerView: 1.4,
+        },
+        650:{
+            slidesPerView: 1.7,
+        },
+        700:{
+            slidesPerView: 1.9,
+        },
+        850:{
+            slidesPerView: 2.2,
+        },
         1100:{
-            slidesPerView: 2.8,
+            slidesPerView: 2.5,
         },
         1500:{
             slidesPerView: 3.3,

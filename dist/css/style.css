@@ -1594,6 +1594,10 @@ a {
   position: relative;
 }
 
+.main_page .news .container {
+  padding-right: 0 !important;
+}
+
 .main_page .news .news__content {
   padding: 54px 0px 93px 0px;
 }
@@ -1611,6 +1615,7 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   min-height: 422px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -1623,6 +1628,7 @@ a {
   z-index: -1;
   width: 100%;
   min-height: 100%;
+  margin: 0 auto;
 }
 
 .main_page .news .news__content .content__slider .slider__slide .slide__info {
@@ -1846,6 +1852,17 @@ a {
     padding: 0px 30px;
     min-height: 226px;
   }
+
+  .main_page .news .news__content .content__slider .slider__slide .slide__info .info__title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .main_page .news .news__content .content__slider .slider__slide .slide__info {
+    padding: 25px 25px 30px 25px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -2042,6 +2059,10 @@ a {
   .main_page .partners .partners__content {
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  .main_page .news .news__content {
+    padding-left: 24px;
   }
 }
 
@@ -2269,6 +2290,34 @@ a {
 
   .main_page .partners .partners__content {
     padding: 80px 0px;
+  }
+
+  .main_page .news .news__content .content__slider .slider__slide {
+    min-height: 390px;
+  }
+
+  .main_page .news .news__content {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main_page .news .news__content .content__slider .slider__slide .slide__info .info__title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .main_page .news .news__content .content__slider .slider__slide .slide__info .info__text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .main_page .news .news__content .content__slider .slider__slide .slide__info {
+    padding: 16px 20px 20px 17px;
   }
 }
 
@@ -2563,6 +2612,10 @@ a {
     font-weight: 400;
     line-height: 24px;
   }
+
+  .main_page .news .news__content .content__slider .slider__slide {
+    min-height: 364px;
+  }
 }
 
 @media screen and (max-width: 500px) and (max-width: 340px) {
@@ -2684,6 +2737,17 @@ a {
 
   .main_page .partners .container {
     padding: 0px 20px;
+  }
+
+  .main_page .news .news__content .content__slider .slider__slide .slide__info .info__text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .main_page .news .news__content .content__slider .slider__slide {
+    min-height: 354px;
   }
 }
 
