@@ -556,8 +556,36 @@ template {
   color: #E9623E;
 }
 
+.navbar_poppup .poppup__content .mobile_btn {
+  display: none;
+  margin-top: 25px;
+}
+
+.navbar_poppup .poppup__content .block__socials {
+  display: none;
+  margin-top: auto;
+  padding-bottom: 100px;
+}
+
+.navbar_poppup .poppup__content .block__socials .socials__item {
+  margin-right: 25px;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.navbar_poppup .poppup__content .block__socials .socials__item:hover {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 .navbar_poppup-closed {
   left: -150vw !important;
+}
+
+.bot_0 {
+  bottom: 0 !important;
 }
 
 .footer {
@@ -746,6 +774,52 @@ template {
 
 .header .header__button:hover span {
   padding-bottom: 0px;
+}
+
+.header .header__mobile {
+  display: none;
+}
+
+.header .header__mobile .mobile__logo {
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.header .header__mobile .mobile__menu {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.header .header__mobile .mobile__menu .menu__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.header .header__mobile .mobile__menu .menu__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .header__mobile .mobile_menu_opened {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.header .header__mobile .mobile_close {
+  opacity: 0;
 }
 
 .button {
@@ -1879,6 +1953,97 @@ a {
     display: none;
   }
 
+  .navbar_poppup .poppup__content .container {
+    padding-left: 54px;
+    padding-right: 34px;
+  }
+
+  .navbar_poppup .poppup__content .content__line {
+    display: none;
+  }
+
+  .navbar_poppup .poppup__content .content__block .block__products .products__title {
+    color: #555555;
+    margin-bottom: 24px;
+  }
+
+  .navbar_poppup .poppup__content .content__block .block__products .products__images img {
+    display: block;
+    height: 24px;
+    margin-bottom: 32px;
+  }
+
+  .navbar_poppup .poppup__content .content__block .block__products .products__images {
+    margin-bottom: 56px;
+  }
+
+  .navbar_poppup .poppup__content .content__block .block__products {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
+  .navbar_poppup .poppup__content .content__block .block__menu .menu__item {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+
+  .navbar_poppup .poppup__content .content__block .block__menu {
+    margin-top: 0px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
+  .navbar_poppup .poppup__content .content__block {
+    padding-top: 137px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .navbar_poppup .poppup__content .desktop_btn {
+    display: none !important;
+  }
+
+  .navbar_poppup .poppup__content .mobile_btn {
+    display: block;
+  }
+
+  .navbar_poppup .poppup__content .block__socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navbar_poppup {
+    left: 0px;
+    bottom: initial;
+    width: 100%;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+
+  .navbar_poppup .poppup__content {
+    min-height: 100vh;
+  }
+
+  .navbar_poppup-closed {
+    left: 0px !important;
+    top: -150%;
+  }
+
   .footer__content .content__top .top__contacts .contacts__map {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -1893,6 +2058,28 @@ a {
 
   .footer {
     margin-left: 0px;
+  }
+
+  .header .header__logo {
+    display: none;
+  }
+
+  .header .header__button {
+    display: none;
+  }
+
+  .header .header__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .header {
+    display: block;
+    z-index: 1000;
   }
 
   .wrapper {
@@ -2227,6 +2414,18 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+  .navbar_poppup .poppup__content .content__block .block__products .products__images img {
+    height: 16px;
+  }
+
+  .navbar_poppup .poppup__content .content__block .block__menu .menu__item {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+
   .footer .container {
     padding: 0px 24px;
   }
@@ -2402,6 +2601,14 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .navbar_poppup .poppup__content .content__block .block__menu .menu__item {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+
   .footer__content .content__top .top__contacts .contacts__info .item__image {
     min-width: 30px;
   }
@@ -2487,6 +2694,14 @@ a {
 }
 
 @media screen and (max-width: 500px) {
+  .navbar_poppup .poppup__content .content__block .block__menu .menu__item {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+
   .footer__content .content__top .top__header .header__item {
     color: #fff;
     font-size: 24px;
@@ -2754,6 +2969,10 @@ a {
     margin-top: -60px;
   }
 
+  .main_page .intro__content .content__image {
+    margin-top: -100px;
+  }
+
   .main_page .intro__content .content__image .image__windmill {
     margin-top: 160px;
   }
@@ -2808,6 +3027,10 @@ a {
 
   .footer__content .content__bottom .bottom__digital img {
     max-width: 149px;
+  }
+
+  .header {
+    padding: 20px;
   }
 
   .button-filled:after {
@@ -2955,5 +3178,11 @@ a {
 @media screen and (max-width: 345px) {
   .main_page .intro__content .content__info {
     margin-top: -110px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .navbar_poppup .poppup__content .content__block {
+    padding-top: 87px;
   }
 }
