@@ -1572,6 +1572,10 @@ template {
   margin-right: 10px;
 }
 
+.career_page .center_line {
+  margin-left: 15px !important;
+}
+
 .career_page .intro {
   position: relative;
   min-height: 78vh;
@@ -1597,6 +1601,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .career_page .intro__content .content__info {
@@ -1656,6 +1662,7 @@ template {
 
 .career_page .intro__content .content__image img {
   width: 100%;
+  margin-bottom: -65px;
 }
 
 .career_page .vacancies_orange {
@@ -1686,6 +1693,8 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .career_page .vacanties .vacanties__list .list__item {
@@ -1713,16 +1722,13 @@ template {
   margin-right: 15px;
 }
 
-.career_page .vacanties .vacanties__list .list__item .item__info {
-  padding-top: 5px;
-}
-
 .career_page .vacanties .vacanties__list .list__item .item__info .info__title {
   color: #fff;
   font-size: 48px;
   font-weight: 600;
   line-height: 59px;
   margin-bottom: 47px;
+  padding-top: 5px;
 }
 
 .career_page .vacanties .vacanties__list .list__item .item__info .info__text {
@@ -1961,6 +1967,18 @@ a {
   top: auto;
 }
 
+@media screen and (max-width: 1700px) {
+  .career_page .vacanties .vacanties__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+
+  .career_page .right_line {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .main_page .company__products .products__pulse .mobile_text {
     display: block;
@@ -2023,6 +2041,51 @@ a {
   .main_page .company__products .products__how_work .how_work__content .content__list {
     max-width: 100%;
   }
+
+  .career_page .intro__content .content__info .info__title {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 78px;
+    margin-bottom: 48px;
+  }
+
+  .career_page .intro__content .content__info .info__title:after {
+    width: 115%;
+    content: '';
+    height: 38px;
+    bottom: 5px;
+  }
+
+  .career_page .intro__content .content__info .info__text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 45px;
+  }
+
+  .career_page .vacanties .vacanties__list .list__item .item__info .info__title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 15px;
+    margin-bottom: 37px;
+  }
+
+  .career_page .vacanties .vacanties__list .list__item .item__info .info__text {
+    margin-bottom: 37px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+
+  .career_page .vacanties .vacanties__list .list__item {
+    margin-top: 80px;
+    padding-bottom: 86px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -2074,6 +2137,22 @@ a {
 
   .main_page .company__products .products__pulse .pulse__content .content__info .info__text span:after {
     height: 18px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .career_page .intro__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 43%;
+            flex: 0 1 43%;
+  }
+
+  .career_page .intro__content .content__info .info__text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 45px;
   }
 }
 
