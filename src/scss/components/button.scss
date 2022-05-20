@@ -90,6 +90,22 @@
         }
     }
 
+    &-without_after{
+        transition: all .2s linear !important;
+
+        &:hover{
+            background: #fff;
+            &::after{
+                display: none !important;
+            }
+        }
+
+        &::after{
+            content: "";
+            display: none !important;
+        }
+    }
+
     @media screen and (max-width: 400px) {
         font-size: 14px;
         padding: 16px 20px;
