@@ -1,6 +1,7 @@
 @@include('webpTest.js');
 @@include('swiper.js');
 @@include('pages/main_page.js')
+@@include('pages/news_page.js')
 
 AOS.init()
 
@@ -28,3 +29,4 @@ navbarBtns.forEach(navbarBtn=>{
         } 
     })
 })
+
