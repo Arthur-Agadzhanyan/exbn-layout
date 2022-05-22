@@ -25,6 +25,7 @@
 @import "./pages/main.scss";
 @import "./pages/career.scss";
 @import "./pages/news.scss";
+@import "./pages/about.scss";
 
 //Components
 @import "./components/button.scss";
@@ -121,6 +122,12 @@ a{
         top: auto;
     }
 
+    &-about{
+        bottom: 0;
+        height: calc(100% - 94px);
+        top: auto;
+    }
+
     @media screen and (max-width: 1500px) {
         right: 81px;
     }
@@ -130,3 +137,10 @@ a{
     }
 }
 
+.section_title{
+    @include text(#fff,48px,600,59px);
+
+    @media screen and (max-width: 500px) {
+        @include text(#fff,24px,600,29px);
+    }
+}

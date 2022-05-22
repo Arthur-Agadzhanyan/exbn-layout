@@ -1,11 +1,5 @@
 .main_page{
-    .section_title{
-        @include text(#fff,48px,600,59px);
-
-        @media screen and (max-width: 500px) {
-            @include text(#fff,24px,600,29px);
-        }
-    }
+   
 
     .intro{
         min-height: calc(100vh - 94px);
@@ -1190,7 +1184,7 @@
     }
 
     .partners {
-        background: #000;
+        background: #131313;
         
         .partners__content {
             padding: 54px 0px 93px 0px;

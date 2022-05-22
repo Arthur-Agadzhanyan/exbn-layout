@@ -822,13 +822,6 @@ template {
   opacity: 0;
 }
 
-.main_page .section_title {
-  color: #fff;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 59px;
-}
-
 .main_page .intro {
   min-height: calc(100vh - 94px);
   padding-bottom: 157px;
@@ -1397,7 +1390,7 @@ template {
 }
 
 .main_page .partners {
-  background: #000;
+  background: #131313;
 }
 
 .main_page .partners .partners__content {
@@ -2025,6 +2018,324 @@ template {
   margin-bottom: 32px;
 }
 
+.about_page .center_line-intro {
+  height: 74%;
+  left: calc(50% - 1px);
+}
+
+.about_page .intro {
+  padding-top: 155px;
+  min-height: calc(100vh - 94px);
+}
+
+.about_page .intro .intro__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about_page .intro .intro__content .content__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+}
+
+.about_page .intro .intro__content .content__info .info__title {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 78px;
+  max-width: 227px;
+  margin-bottom: 73px;
+}
+
+.about_page .intro .intro__content .content__info .info__title span {
+  position: relative;
+  z-index: 2;
+}
+
+.about_page .intro .intro__content .content__info .info__title span:after {
+  content: '';
+  height: 48px;
+  width: 110%;
+  -webkit-transform: translateX(-5%);
+      -ms-transform: translateX(-5%);
+          transform: translateX(-5%);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  z-index: -1;
+  background: #E9623E;
+}
+
+.about_page .intro .intro__content .content__info .info__title span:last-child:after {
+  width: 130%;
+  -webkit-transform: translateX(-12%);
+      -ms-transform: translateX(-12%);
+          transform: translateX(-12%);
+}
+
+.about_page .intro .intro__content .content__info .info__text {
+  max-width: 553px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.about_page .intro .intro__content .content__image {
+  position: relative;
+  z-index: 2;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 44%;
+          flex: 0 1 44%;
+  padding-bottom: 20px;
+}
+
+.about_page .intro .intro__content .content__image img {
+  max-width: 100%;
+  max-height: 60vh;
+}
+
+.about_page .intro .intro__content .content__arrow {
+  display: none;
+}
+
+.about_page .team {
+  background: #131313;
+}
+
+.about_page .team .team__content {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.about_page .team .team__content .content__list {
+  width: 90%;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about_page .team .team__content .content__list .list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.about_page .team .team__content .content__list .list__item .item__image img {
+  width: 100%;
+  display: block;
+}
+
+.about_page .team .team__content .content__list .list__item .item__info {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.about_page .team .team__content .content__list .list__item .item__info .info__image {
+  margin-right: 20px;
+  width: 30px;
+}
+
+.about_page .team .team__content .content__list .list__item .item__info .info__image img {
+  width: 30px;
+  margin-bottom: -10px;
+}
+
+.about_page .team .team__content .content__list .list__item .item__info .info__content .content__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.about_page .team .team__content .content__list .list__item .item__info .info__content .content__text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.about_page .team .team__content .content__list .list__item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  height: 1px;
+  background: #555555;
+}
+
+.about_page .team .team__content .content__list .list__item:last-child:after,
+.about_page .team .team__content .content__list .list__item:nth-last-child(2):after,
+.about_page .team .team__content .content__list .list__item:nth-last-child(3):after {
+  height: 0px;
+}
+
+.about_page .team .team__content .content__work_with_us .work_with_us__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.about_page .partners {
+  position: relative;
+}
+
+.about_page .partners .partners__content {
+  position: relative;
+  z-index: 2;
+  padding: 96px 0px 96px 0px;
+}
+
+.about_page .partners .partners__content .content__slider {
+  color: #fff;
+  margin-top: 54px;
+}
+
+.about_page .partners .partners__content .content__slider .slider__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  min-height: 276px;
+}
+
+.about_page .partners .partners__content .content__slider .slider__slide-lower img {
+  max-width: 100%;
+  margin-bottom: -20px;
+  margin-right: -10px;
+}
+
+.about_page .partners .partners__content .content__slider .slider__slide-higher img {
+  max-width: 100%;
+  margin-top: -40px;
+}
+
+.about_page .partners .partners__content .content__slider .slider__slide img {
+  max-width: 100%;
+}
+
+.about_page .partners .partners__content .content__list {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 45px;
+}
+
+.about_page .partners .partners__content .content__list .list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31%;
+          flex: 0 1 31%;
+  background: #fff;
+  margin-bottom: 24px;
+  min-height: 276px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about_page .partners .partners__content .content__list .list__item img {
+  max-width: 100%;
+}
+
+.about_page .partners .partners__content .content__list .list__item-lower img {
+  margin-top: 20px;
+}
+
+.about_page .partners .partners__content .content__list .list__item-higher img {
+  margin-top: -30px;
+}
+
+.about_page .company_at_glace {
+  position: relative;
+  padding-bottom: 96px;
+}
+
+.about_page .company_at_glace__content {
+  position: relative;
+  z-index: 2;
+}
+
+.about_page .company_at_glace__content .content__list {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about_page .company_at_glace__content .content__list .list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+}
+
+.about_page .company_at_glace__content .content__list .list__item .item__title {
+  color: #fff;
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 117px;
+  margin-bottom: 2px;
+}
+
+.about_page .company_at_glace__content .content__list .list__item .item__text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  max-width: 256px;
+}
+
+.about_page .company_at_glace__content .content__list .list__item:nth-child(2) .item__text {
+  max-width: 221px;
+}
+
+.about_page .company_at_glace__content .content__list .list__item:nth-child(3) {
+  margin-left: 20px;
+}
+
 .button {
   position: relative;
   color: #fff;
@@ -2231,6 +2542,19 @@ a {
   top: auto;
 }
 
+.right_line-about {
+  bottom: 0;
+  height: calc(100% - 94px);
+  top: auto;
+}
+
+.section_title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59px;
+}
+
 @media screen and (max-width: 1700px) {
   .career_page .vacanties .vacanties__list .list__item {
     -webkit-box-flex: 0;
@@ -2409,6 +2733,10 @@ a {
     font-weight: 600;
     line-height: 36px;
   }
+
+  .about_page .intro .intro__content .content__info .info__title {
+    margin-bottom: 43px;
+  }
 }
 
 @media screen and (max-width: 1350px) {
@@ -2473,6 +2801,28 @@ a {
 
   .news_page .intro {
     padding-top: 30px;
+  }
+
+  .about_page .team .team__content .content__list {
+    width: 100%;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item .item__title {
+    color: #fff;
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 117px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item .item__text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item .item__text {
+    max-width: 210px !important;
   }
 }
 
@@ -2596,6 +2946,55 @@ a {
     font-size: 18px;
     font-weight: 600;
     line-height: 36px;
+  }
+
+  .about_page .intro .intro__content .content__info .info__title {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 78px;
+  }
+
+  .about_page .intro .intro__content .content__info .info__title span:after {
+    content: '';
+    height: 38px;
+    width: 110%;
+    -webkit-transform: translateX(-5%);
+        -ms-transform: translateX(-5%);
+            transform: translateX(-5%);
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    z-index: -1;
+    background: #E9623E;
+  }
+
+  .about_page .intro .intro__content .content__info .info__text {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .about_page .team .team__content .content__list .list__item .item__info .info__content .content__title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+
+  .about_page .partners .partners__content .content__slider .slider__slide {
+    padding: 0px 30px;
+    min-height: 226px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item:nth-child(2) .item__text {
+    max-width: 221px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item:nth-child(3) {
+    margin-left: 10px;
   }
 }
 
@@ -2947,6 +3346,20 @@ a {
     padding: 0px 24px;
   }
 
+  .about_page .container {
+    padding: 0px 48px;
+  }
+
+  .about_page .partners .partners__content .content__slider {
+    display: none;
+  }
+
+  .about_page .partners .partners__content .content__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .wrapper {
     margin-left: 0px;
   }
@@ -3161,6 +3574,42 @@ a {
         -ms-flex: 0 1 48%;
             flex: 0 1 48%;
   }
+
+  .about_page .partners .partners__content .content__list .list__item {
+    padding: 24px;
+    min-height: 244px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 47%;
+            flex: 0 1 47%;
+    margin-bottom: 24px;
+    margin-left: 0px !important;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item .item__text {
+    max-width: 70% !important;
+  }
+
+  .about_page .company_at_glace__content .content__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about_page .intro .intro__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+
+  .about_page .intro .intro__content .content__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -3222,6 +3671,96 @@ a {
   .career_page .vacanties .vacanties__list .list__item .item__line {
     width: 280px;
   }
+
+  .about_page .team .team__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+  }
+
+  .about_page .team .team__content .content__list .list__item:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about_page .intro .intro__content .content__info .info__title {
+    max-width: 100%;
+  }
+
+  .about_page .intro .intro__content .content__image {
+    max-height: 40vh;
+    margin-bottom: 96px;
+  }
+
+  .about_page .intro .intro__content .content__image img {
+    margin: 0;
+    display: block;
+    max-height: 40vh;
+  }
+
+  .about_page .intro .intro__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .about_page .intro .intro__content .content__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 30px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .about_page .intro .intro__content .content__image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .about_page .intro .intro__content .content__arrow {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    border-bottom: 1px solid #555555;
+    padding-bottom: 40px;
+    text-align: center;
+    display: block;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .about_page .intro {
+    padding-top: 100px;
+  }
+
+  .about_page .team .team__content {
+    padding-bottom: 80px;
+  }
+
+  .about_page .team {
+    background: transparent;
+  }
+
+  .about_page .partners {
+    background: #131313;
+  }
+
+  .about_page .company_at_glace {
+    padding-top: 80px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -3267,6 +3806,10 @@ a {
   .news_page .news_audio {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .about_page .partners .partners__content .content__list .list__item {
+    min-height: 214px;
   }
 }
 
@@ -3502,6 +4045,33 @@ a {
   .news_page .news_images {
     padding-top: 20px;
   }
+
+  .about_page .container {
+    padding: 0px 20px;
+  }
+
+  .about_page .intro .intro__content .content__info .info__title {
+    margin-left: 5px;
+  }
+
+  .about_page .partners .partners__content .content__list .list__item {
+    min-height: 184px;
+  }
+
+  .about_page .partners .partners__content {
+    padding: 80px 0px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item .item__title {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 68px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item .item__text {
+    max-width: 90% !important;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -3656,10 +4226,37 @@ a {
   .news_page .news_audio .news_audio__content .content__podcast {
     margin-bottom: 30px;
   }
+
+  .about_page .team .team__content .content__list .list__item .item__info .info__content .content__title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .about_page .team .team__content .content__list .list__item .item__info .info__content .content__text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .about_page .team .team__content .content__list .list__item .item__info {
+    padding-bottom: 32px;
+    margin-top: 12px;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .main_page .partners .partners__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48.5%;
+            flex: 0 1 48.5%;
+    margin-bottom: 16px;
+  }
+
+  .about_page .partners .partners__content .content__list .list__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 48.5%;
             flex: 0 1 48.5%;
@@ -3696,13 +4293,6 @@ a {
 
   .footer {
     padding-bottom: 40px;
-  }
-
-  .main_page .section_title {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29px;
   }
 
   .main_page .intro__content .content__info {
@@ -4054,6 +4644,102 @@ a {
     font-weight: 600;
     line-height: normal;
   }
+
+  .about_page .intro .intro__content .content__info .info__title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    margin-bottom: 40px;
+  }
+
+  .about_page .intro .intro__content .content__info .info__title span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .about_page .intro .intro__content .content__info .info__title span:after {
+    content: '';
+    height: 21px;
+    width: 110%;
+    -webkit-transform: translateX(-5%);
+        -ms-transform: translateX(-5%);
+            transform: translateX(-5%);
+    bottom: 0px;
+  }
+
+  .about_page .intro .intro__content .content__info .info__text {
+    max-width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  .about_page .intro .intro__content .content__image {
+    padding-bottom: 0px;
+  }
+
+  .about_page .intro .intro__content .content__image img {
+    max-height: 258px;
+  }
+
+  .about_page .team .team__content .content__list .list__item .item__info .info__image {
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  .about_page .team .team__content .content__list .list__item .item__info .info__image img {
+    width: 25px;
+    margin-bottom: -8px;
+  }
+
+  .about_page .team .team__content .content__list .list__item:after {
+    width: 100%;
+  }
+
+  .about_page .team .team__content .content__list {
+    margin-top: 40px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item .item__title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item .item__text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item .item__text {
+    max-width: 100% !important;
+  }
+
+  .about_page .company_at_glace__content .content__list {
+    margin-top: 24px;
+  }
+
+  .about_page .company_at_glace {
+    padding-bottom: 80px;
+  }
+
+  .section_title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+  }
 }
 
 @media screen and (max-width: 500px) and (max-width: 340px) {
@@ -4101,6 +4787,46 @@ a {
 
   .main_page .company__products .products__pulse .pulse__content .content__info .info__text span:after {
     height: 14px;
+  }
+
+  .about_page .team .team__content .content__list .list__item .item__info .info__image {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    width: 15px;
+    margin-right: 7px;
+  }
+
+  .about_page .team .team__content .content__list .list__item .item__info .info__image img {
+    width: 15px;
+    margin-bottom: -2px;
+  }
+
+  .about_page .team .team__content .content__list .list__item .item__info .info__content .content__title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 6px;
+  }
+
+  .about_page .team .team__content .content__list .list__item .item__info .info__content .content__text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .about_page .team .team__content .content__work_with_us .work_with_us__title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .about_page .team .team__content .content__work_with_us .work_with_us__btn {
+    min-width: 230px;
   }
 }
 
@@ -4222,6 +4948,18 @@ a {
     line-height: normal;
   }
 
+  .about_page .intro .intro__content .content__image img {
+    max-height: 208px;
+  }
+
+  .about_page .partners .partners__content .content__list .list__item {
+    min-height: 160px;
+  }
+
+  .about_page .partners .container {
+    padding: 0px 20px;
+  }
+
   .button-filled:after {
     height: 115%;
     width: 115%;
@@ -4316,11 +5054,52 @@ a {
     font-weight: 600;
     line-height: 26px;
   }
+
+  .about_page .intro .intro__content .content__info .info__text {
+    max-width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .about_page .partners .partners__content .content__list .list__item {
+    min-height: 140px;
+  }
+
+  .about_page .company_at_glace__content .content__list .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+  }
 }
 
 @media screen and (max-width: 345px) {
   .main_page .intro__content .content__info {
     margin-top: -110px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .about_page .team .team__content .content__list .list__item .item__info .info__content .content__title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .about_page .team .team__content .content__list .list__item .item__info .info__content .content__text {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+
+  .about_page .team .team__content .content__work_with_us .work_with_us__title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
   }
 }
 
