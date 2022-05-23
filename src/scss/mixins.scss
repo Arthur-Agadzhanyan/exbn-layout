@@ -5,3 +5,214 @@
     line-height: $lh;
 }
 
+@mixin modalContainer($width,$margin){
+    max-width: $width;
+    width: 100%;
+    margin: $margin;
+}
+
+@mixin modal($width){
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000000000000000000;
+
+    display: none; // to flex
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    transition: all .2s linear;
+    opacity: 0;
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 200;
+        background: rgba(0,0,0,.4);
+    }
+
+    .modal__content{
+        position: relative;
+        z-index: 300;
+
+        max-width: $width;
+        padding: 80px 20px 88px 20px;
+        width: 100%;
+        background: #1D1D1D;
+
+        text-align: center;
+
+        &__title{
+            @include text(#FFF,36px,600,64px);
+
+            @media screen and (max-width: 500px) {
+                @include text(#fff,24px,600,29px) ;
+                margin-bottom: 16px;
+            }
+        }
+
+        &__text{
+            @include text(#fff,16px,normal,20px);
+            margin-bottom: 48px;
+
+            @media screen and (max-width: 500px) {
+                margin-bottom: 32px;
+            }
+        }
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+
+            .form__div {
+                flex: 0 1 100%;
+                position: relative;
+                color: #1D1D1D;
+                
+                margin-bottom: 24px;
+        
+                .form__input {
+                  width: 100%;
+                  background: transparent;
+                  padding: 14px 23px;
+                  position: relative;
+                  z-index: 2;
+                  color: $grey-1;
+                  background: #C4C4C4;
+                  border: none;
+                  outline: none;
+        
+                  @include text(#1D1D1D, 18px, 600);
+
+                    @media screen and (max-width: 500px) {
+                        padding: 14px !important;
+                    }
+                }
+        
+                .form__input:focus + .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+                  top: 2px;
+                  font-size: 12px;
+                  font-weight: 400;
+                  color: #555555;
+                  z-index: 10;
+
+                  @media screen and (max-width: 500px) {
+                    font-size: 10px;
+                  }
+                }
+        
+                .form__input:focus, .form__input:not(:placeholder-shown) {
+                    padding: 17px 23px 11px 23px;
+                    @media screen and (max-width: 500px) {
+                        padding: 17px 14px 11px 14px;
+                    }
+                }
+        
+                .form__label {
+                  transition: all .2s linear;
+                  position: absolute;
+                  left: 24px;
+                  top: 14px;
+                  z-index: 10;
+                  @include text(#1D1D1D, 18px, 600);
+
+                  @media screen and (max-width: 500px) {
+                      left: 14px;
+                  }
+                }
+              }
+        
+              .form__check_item{
+                flex: 0 1 100%;
+        
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 0;
+                margin-top: 24px;
+                margin-left: 30px;
+                text-align: left;
+        
+                .item__check{
+                  display: flex;
+                  align-items: center;
+        
+                  cursor: pointer;
+        
+                  .check__input{
+                    display: none;
+                  }
+        
+                  .check__custom{
+                    position: relative;
+        
+                    display: block;
+                    min-width: 22px;
+                    min-height: 22px;
+                    border-radius: 4px;
+                    background: transparent;
+                    border: 1px solid #848484;
+                    transition: .1s linear;
+        
+                    &:before{
+                      opacity: 0;
+        
+                      content: "";
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%,-50%);
+        
+                      width: 15px;
+                      height: 11px;
+                      background: url("../img/icons/checked.svg") no-repeat center;
+        
+                      transition: .1s linear;
+                    }
+                  }
+        
+                  .check__input:checked + .check__custom{
+                    background: white;
+                  }
+        
+                  .check__input:checked + .check__custom:before{
+                    opacity: 1;
+                  }
+        
+                  .check__text{
+                    margin-left: 8px;
+                    @include text($grey-1, 14px, 400);
+                    transition: .1s linear;
+
+                    @media screen and (max-width: 450px) {
+                        font-size: 12px;
+                    }
+                  }
+                }
+
+                @media screen and (max-width: 360px) {
+                    margin-left: 0px;
+                }
+              }
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .modal__btn{
+            margin-top: 24px;
+            max-width: 276px;
+        }
+
+        @media screen and (max-width: 500px) {
+            overflow-y: auto;
+        }
+    }
+}

@@ -204,3 +204,34 @@ navbarBtns.forEach(navbarBtn=>{
     })
 })
 
+// MODAL
+const requestDemoBtns = document.querySelectorAll('.request_demo_btn')
+const requestDemoModal = document.getElementById("requestDemoModal")
+
+
+if(requestDemoBtns.length && requestDemoModal){
+    requestDemoBtns.forEach((btn)=>{
+        btn.addEventListener('click',(e)=>{
+            requestDemoModal.style.display = "flex"
+            document.body.style.overflow = "hidden"
+            setTimeout(()=>requestDemoModal.style.opacity = "1",50)
+        
+            return
+        })
+    })
+}
+
+// CLOSE MODALS
+const closeModal = document.querySelectorAll(".close_modal")
+
+if(closeModal){
+    closeModal.forEach(el=>{
+        el.addEventListener("click",()=>{
+            if(requestDemoModal){
+                requestDemoModal.style.opacity = "0"
+                document.body.style.overflow = "auto"
+                setTimeout(()=>requestDemoModal.style.display = "none",300)
+            }
+        })
+    })
+}

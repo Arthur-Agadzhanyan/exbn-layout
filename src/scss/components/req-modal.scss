@@ -1,0 +1,63 @@
+.close{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+
+    cursor: pointer;
+
+    
+    @media screen and (max-width: 500px) {
+        top: 15px;
+        right: 15px;
+    }
+}
+
+// .modal_bell{
+//     @include modal()    
+// }
+
+.order_modal{
+    @include modal(760px);
+
+    transition: .2s linear;
+
+    .modal__content{
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        @media screen and (max-width: 450px) {
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+        }
+
+        .content__container{
+            max-width: 570px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        &__text{}
+
+        &__title{
+            
+        }
+
+        @media screen and (max-width: 500px) {
+            height: 95vh;
+            
+        }
+    }
+
+    &__text{
+        margin-top: 24px;
+    }
+
+    @media screen and (max-width: 450px) {
+        @include modal(100vw);
+    }
+    @media screen and (max-width: 500px) {
+        .overlay{
+            background: #1d1d1d !important;
+        }
+    }
+}
