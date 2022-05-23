@@ -27,6 +27,7 @@
 @import "./pages/news.scss";
 @import "./pages/about.scss";
 @import "./pages/current_ml.scss";
+@import "./pages/pulse.scss";
 
 //Components
 @import "./components/button.scss";
@@ -797,6 +798,13 @@ a{
           padding: 0px 21px;
         }
       }
+      
+      .pulse_mb-24{
+        @media screen and (max-width: 800px){
+          display: block;
+          margin-bottom: 24px;
+        }
+      }
 
       .key_aspects_wrapper{
         position: relative;
@@ -995,6 +1003,9 @@ a{
 
                     @media screen and (max-width: 500px) {
                       max-width: 50vw;
+                      &-pulse{
+                        max-width: 85vw;
+                      }
                     }
                   }
 
