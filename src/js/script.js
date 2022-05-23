@@ -3,6 +3,7 @@
 @@include('pages/main_page.js')
 @@include('pages/news_page.js')
 @@include('pages/about_page.js')
+@@include('pages/current_ml.js')
 
 AOS.init()
 
