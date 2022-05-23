@@ -1073,3 +1073,21 @@ a{
       }
     }
 }
+
+.path_line {
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-name: line;
+}
+
+.path_line_sec {
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-name: line;
+}
+
+@keyframes line {
+  100% {
+      stroke-dashoffset: 0;
+  }
+}

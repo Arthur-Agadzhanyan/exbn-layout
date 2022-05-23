@@ -296,6 +296,7 @@
     }
 
     .about_company{
+        overflow: hidden;
         padding: 69px 47px 110px 47px;
         background: #E9623E;
 
@@ -477,6 +478,7 @@
     } 
 
     .company_mission{
+        overflow: hidden;
         background: $grey-2;
         padding: 75px 15px;
 
@@ -1182,6 +1184,7 @@
     }
 
     .partners {
+        overflow: hidden;
         background: #131313;
         
         .partners__content {

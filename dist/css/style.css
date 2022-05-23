@@ -929,6 +929,7 @@ template {
 }
 
 .main_page .about_company {
+  overflow: hidden;
   padding: 69px 47px 110px 47px;
   background: #E9623E;
 }
@@ -1005,6 +1006,7 @@ template {
 }
 
 .main_page .company_mission {
+  overflow: hidden;
   background: #131313;
   padding: 75px 15px;
 }
@@ -1390,6 +1392,7 @@ template {
 }
 
 .main_page .partners {
+  overflow: hidden;
   background: #131313;
 }
 
@@ -2204,6 +2207,7 @@ template {
 
 .about_page .partners {
   position: relative;
+  overflow: hidden;
 }
 
 .about_page .partners .partners__content {
@@ -2393,6 +2397,10 @@ template {
   top: 31%;
   right: 0;
   z-index: 2;
+}
+
+.current_ml_page .optimization .optimization__content .content__rop .rop__graphs .graphs__item svg {
+  width: 100%;
 }
 
 .current_ml_page .optimization .optimization__content .content__rop .rop__graphs .graphs__item .item__text {
@@ -3761,6 +3769,36 @@ a {
   font-weight: 600;
   line-height: 20px;
   padding: 40px 0;
+}
+
+.path_line {
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: line;
+          animation-name: line;
+}
+
+.path_line_sec {
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: line;
+          animation-name: line;
+}
+
+@-webkit-keyframes line {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line {
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media screen and (max-width: 1800px) {
@@ -6708,7 +6746,8 @@ a {
             flex: 0 1 46%;
   }
 
-  .current_ml_page .optimization .optimization__content .content__rop .rop__graphs .graphs__item img {
+  .current_ml_page .optimization .optimization__content .content__rop .rop__graphs .graphs__item img,
+  .current_ml_page .optimization .optimization__content .content__rop .rop__graphs .graphs__item svg {
     max-width: 100%;
   }
 

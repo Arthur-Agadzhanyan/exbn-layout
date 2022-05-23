@@ -69,6 +69,10 @@
                             z-index: 2;
                         }
 
+                        svg{
+                            width: 100%;
+                        }
+
                         .item__text {
                             position: absolute;
                             top: 40%;
@@ -81,7 +85,7 @@
 
                         @media screen and (max-width: 500px) {
                             flex: 0 1 46%;
-                            img{
+                            img,svg{
                                 max-width: 100%;
                             }
 
