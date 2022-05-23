@@ -3006,6 +3006,10 @@ template {
   float: right;
 }
 
+.pulse_page .build_and_run {
+  position: relative;
+}
+
 .pulse_page .build_and_run .container .build_and_run_content {
   padding: 95px 0;
 }
