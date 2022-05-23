@@ -446,7 +446,7 @@
 
         .content__slider{
             position: relative;
-            z-index: 3;
+            z-index: 30;
             max-width: 826px;
             margin-top: 54px;
         }
@@ -454,7 +454,8 @@
         .slider__container{
             position: relative;
             max-width: 920px;
-
+            position: relative;
+            z-index: 30;
             .swiper-button-next{
                 &::after{
                     display: none;
