@@ -44,6 +44,29 @@ paths.forEach(element => {
     delay_sec += duration + 0.2;
 })
 
+let len_third = 0;
+let speed_third  = 8;
+let delay_third  = 0;
+
+const paths_third = document.querySelectorAll('.path_line_third');
+
+paths_third.forEach(element => {
+    let elementLen = element.getTotalLength();
+    len_third += elementLen;
+})
+
+paths_third.forEach(element => {
+    let elementLen = element.getTotalLength();
+    let duration = elementLen / len_third * speed_third;
+
+    element.style.animationDuration = `${duration}s`;
+    element.style.animationDelay = `${delay_third}s`;
+
+    element.setAttribute('stroke-dasharray', elementLen);
+    element.setAttribute('stroke-dashoffset', elementLen);
+    delay_third += duration + 0.2;
+})
+
 const imageWindmill = document.querySelector('.image__windmill')
 
 if(imageWindmill){

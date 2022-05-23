@@ -1086,6 +1086,12 @@ a{
   animation-name: line;
 }
 
+.path_line_third{
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-name: line;
+}
+
 @keyframes line {
   100% {
       stroke-dashoffset: 0;

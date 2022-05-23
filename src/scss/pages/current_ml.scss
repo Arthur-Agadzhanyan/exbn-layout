@@ -183,36 +183,57 @@
                     flex: 0 1 100%;
                     margin-left: -120px;
 
+                    svg{
+                        min-width: 100%;
+                    }
+
                     @media screen and (max-width: 1300px) {
-                        img{
+                        svg{
                             margin-left: -80px;
                             max-width: 100%;
                         }
                     }
                     @media screen and (max-width: 900px) {
                         margin-left: 0px;
-                        img{
+                        svg{
                             margin-left: -60px;
                             max-width: 100%;
                         }
                     }
                     @media screen and (max-width: 700px) {
-                        img{
-                            margin-left: calc(-60px - 20%);
-                            max-width: 120%;
+                        svg{
+                            // margin-left: calc(-60px - 20%);
+                            width: 200%;
+                        }
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        svg{
+                            margin-left: calc(-60px - 20vw);
+                            width: 120vw !important;
+                            max-width: 120vw;
                         }
                     }
 
                     @media screen and (max-width: 500px) {
-                        img{
-                            margin-left: calc(-60px - 40%);
-                            max-width: 140%;
+                        svg{
+                            margin-left: calc(-75px - 40vw);
+                            width: 140vw !important;
+                            max-width: 140vw;
+                            max-height: 600px !important;
+                            min-height: 400px !important;
+                            height: auto !important;
                         }
                     }
                     @media screen and (max-width: 400px) {
-                        img{
-                            margin-left: calc(-50px - 42%);
-                            max-width: 142%;
+                        svg{
+                            margin-left: calc(-50px - 45vw);
+
+                            width: 145vw !important;
+                            max-width: 145vw;
+                            max-height: 560px !important;
+                            min-height: 320px !important;
+                            height: auto !important;
                         }
                     }
                 }
@@ -246,7 +267,7 @@
                         bottom: 40px;
                     }
                     @media screen and (max-width: 400px) {
-                        bottom: 30px;
+                        bottom: 15px;
                     }
                 }
 

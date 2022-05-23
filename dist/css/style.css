@@ -2458,6 +2458,10 @@ template {
   margin-left: -120px;
 }
 
+.current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph svg {
+  min-width: 100%;
+}
+
 .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__man {
   position: absolute;
   bottom: -40px;
@@ -3789,6 +3793,15 @@ a {
           animation-name: line;
 }
 
+.path_line_third {
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: line;
+          animation-name: line;
+}
+
 @-webkit-keyframes line {
   100% {
     stroke-dashoffset: 0;
@@ -4217,7 +4230,7 @@ a {
     max-width: 210px !important;
   }
 
-  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph img {
+  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph svg {
     margin-left: -80px;
     max-width: 100%;
   }
@@ -5414,7 +5427,7 @@ a {
     margin-left: 0px;
   }
 
-  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph img {
+  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph svg {
     margin-left: -60px;
     max-width: 100%;
   }
@@ -5940,9 +5953,8 @@ a {
     padding-left: 0px;
   }
 
-  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph img {
-    margin-left: calc(-60px - 20%);
-    max-width: 120%;
+  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph svg {
+    width: 200%;
   }
 
   .current_ml_page .products__how_work .how_work__content .content__text .text__item {
@@ -6199,6 +6211,12 @@ a {
     font-weight: 600;
     line-height: 50px;
     max-width: 360px;
+  }
+
+  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph svg {
+    margin-left: calc(-60px - 20vw);
+    width: 120vw !important;
+    max-width: 120vw;
   }
 
   .current_ml_page .value_creation__content .content__info .info__list {
@@ -6774,9 +6792,13 @@ a {
     max-width: 245px;
   }
 
-  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph img {
-    margin-left: calc(-60px - 40%);
-    max-width: 140%;
+  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph svg {
+    margin-left: calc(-75px - 40vw);
+    width: 140vw !important;
+    max-width: 140vw;
+    max-height: 600px !important;
+    min-height: 400px !important;
+    height: auto !important;
   }
 
   .current_ml_page .stuck_pipe .stuck_pipe__content {
@@ -7680,13 +7702,17 @@ a {
     line-height: 29px;
   }
 
-  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph img {
-    margin-left: calc(-50px - 42%);
-    max-width: 142%;
+  .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__graph svg {
+    margin-left: calc(-50px - 45vw);
+    width: 145vw !important;
+    max-width: 145vw;
+    max-height: 560px !important;
+    min-height: 320px !important;
+    height: auto !important;
   }
 
   .current_ml_page .stuck_pipe .stuck_pipe__content .content__container .content__man {
-    bottom: 30px;
+    bottom: 15px;
   }
 
   .current_ml_page .products__how_work .how_work__content .content__list .list__item .item__image {
