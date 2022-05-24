@@ -178,8 +178,9 @@
             display: flex;
             flex-wrap: wrap;
             max-width: 1300px;
+
             position: relative;
-            z-index: 2;
+            z-index: 5;
 
             .content__item {
                 flex: 0 1 32%;
@@ -188,6 +189,44 @@
 
                 img{
                     max-width: 100%;
+                    -moz-user-select: none; user-select: none;
+                    cursor: zoom-in;
+                }
+
+                &:focus{
+                    pointer-events: none;
+                }
+
+                &:focus img{
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 1001;
+                    max-width: 90%;
+                    max-height: 70%;
+                    outline: none;
+                    pointer-events: none;
+                    transform: translate(-50%,-50%) scale(1.4);
+
+                    @media screen and (max-width: 600px) {
+                        transform: translate(-50%,-50%) scale(1.2);
+                    }
+                    @media screen and (max-width: 500px) {
+                        transform: translate(-50%,-50%) scale(1.1);
+                    }
+                    @media screen and (max-width: 400px) {
+                        transform: translate(-50%,-50%) scale(1);
+                    }
+                }
+                  
+                &:focus div {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0,0,0,.7);
+                    cursor: zoom-out;
                 }
 
                 @media screen and (max-width: 1500px) {

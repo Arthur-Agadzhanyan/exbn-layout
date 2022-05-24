@@ -1331,13 +1331,24 @@
 
                     position: relative;
 
-                    .slide__image {
+                    .slide__overlay {
                         position: absolute;
                         top: 0;
                         left: 0;
                         right: 0;
                         bottom: 0;
                         z-index: -1;
+
+                        background: rgba(0, 0, 0,.7);
+                    }
+
+                    .slide__image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: -4;
                         width: 100%;
                         min-height: 100%;
                         margin: 0 auto;
