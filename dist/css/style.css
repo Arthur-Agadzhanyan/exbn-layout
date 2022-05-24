@@ -3216,6 +3216,50 @@ template {
   line-height: 68px;
 }
 
+.policy_page .center_line,
+.policy_page .right_line {
+  height: 97%;
+}
+
+.policy_page .intro {
+  position: relative;
+  min-height: 250vh;
+}
+
+.policy_page .content__info {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  padding-bottom: 400px;
+}
+
+.policy_page .content__info .info__link {
+  display: block;
+  margin-bottom: 33px;
+}
+
+.policy_page .content__info .info__link .info__arrow {
+  width: 45px;
+}
+
+.policy_page .content__info .info__title {
+  display: block;
+  margin-bottom: 60px;
+  max-width: 760px;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 78px;
+}
+
+.policy_page .content__info .info__text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
 .button {
   position: relative;
   color: #fff;
@@ -4393,6 +4437,14 @@ a {
     line-height: 32px;
   }
 
+  .policy_page .content__info .info__title {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 63px;
+    margin-bottom: 40px;
+  }
+
   .right_line {
     right: 81px;
   }
@@ -4641,6 +4693,13 @@ a {
 
 @media screen and (max-width: 1350px) {
   .news_page .intro .intro__content .content__info .info__title {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 58px;
+  }
+
+  .policy_page .content__info .info__title {
     color: #fff;
     font-size: 44px;
     font-weight: 600;
@@ -5126,6 +5185,21 @@ a {
     line-height: 58px;
   }
 
+  .policy_page .content__info .info__title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+  }
+
+  .policy_page .content__info .info__text {
+    margin-bottom: 20px;
+  }
+
+  .policy_page .content__info {
+    margin-left: -30px;
+  }
+
   .products .intro__content .content__info .info__exebenus img {
     height: 23px;
   }
@@ -5565,6 +5639,14 @@ a {
     font-size: 34px;
     font-weight: 600;
     line-height: normal;
+  }
+
+  .policy_page .content__info .info__title {
+    max-width: 100%;
+  }
+
+  .policy_page .content__info {
+    margin-left: 0px;
   }
 
   .wrapper {
@@ -7053,6 +7135,30 @@ a {
     line-height: 48px;
   }
 
+  .policy_page .content__info .info__link .info__arrow {
+    width: 36px;
+  }
+
+  .policy_page .content__info .info__link {
+    margin-top: 10px;
+    margin-bottom: 28px;
+  }
+
+  .policy_page .content__info .info__title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 32px;
+  }
+
+  .policy_page .content__info .info__text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
   .products .intro__content .content__image {
     max-width: 100%;
     -webkit-transform: scale(1);
@@ -7798,6 +7904,14 @@ a {
     font-size: 24px;
     font-weight: 600;
     line-height: 40px;
+  }
+
+  .policy_page .container {
+    padding: 0 21px;
+  }
+
+  .policy_page .content__info {
+    padding-bottom: 95px;
   }
 
   .close {
@@ -8730,6 +8844,13 @@ a {
     max-width: 121px;
   }
 
+  .policy_page .content__info .info__title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+
   .button-filled:after {
     height: 115%;
     width: 115%;
@@ -8893,6 +9014,13 @@ a {
     font-size: 10px;
     font-weight: 600;
     line-height: normal;
+  }
+
+  .policy_page .content__info .info__title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
   }
 
   .products .intro__content .content__info {
