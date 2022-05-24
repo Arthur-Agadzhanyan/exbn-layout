@@ -64,3 +64,27 @@ if(closeModal){
         })
     })
 }
+
+
+const footerStavangerBtn = document.getElementById('footerStavangerBtn')
+const footerHoustonBtn = document.getElementById('footerHoustonBtn')
+
+const footerStavangerInfo = document.getElementById('footerStavanger')
+const footerHoustonInfo = document.getElementById('footerHouston')
+
+
+    footerStavangerBtn.addEventListener('click',(el)=>{
+        footerStavangerBtn.classList.add('header__item-active')
+        footerHoustonBtn.classList.remove('header__item-active')
+
+        footerHoustonInfo.classList.add('dn')
+        footerStavangerInfo.classList.remove('dn')
+    })
+
+    footerHoustonBtn.addEventListener('click',(el)=>{
+        footerHoustonBtn.classList.add('header__item-active')
+        footerStavangerBtn.classList.remove('header__item-active')
+
+        footerStavangerInfo.classList.add('dn')
+        footerHoustonInfo.classList.remove('dn')
+    })

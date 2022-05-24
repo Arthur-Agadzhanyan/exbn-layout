@@ -641,6 +641,10 @@ template {
   background: #E9623E;
 }
 
+.footer__content .content__top .top__header .header__item-clickable {
+  cursor: pointer;
+}
+
 .footer__content .content__top .top__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,6 +727,10 @@ template {
 
 .footer__content .content__bottom .bottom__digital {
   margin-left: auto;
+}
+
+.footer .dn {
+  display: none !important;
 }
 
 .header {
