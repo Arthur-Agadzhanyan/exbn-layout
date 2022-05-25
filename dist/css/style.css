@@ -3260,6 +3260,63 @@ template {
   margin-bottom: 30px;
 }
 
+.error_page .intro {
+  text-align: center;
+}
+
+.error_page .intro .center_line-intro {
+  bottom: 0;
+  height: 60%;
+  top: auto;
+}
+
+.error_page .intro .right_line-intro {
+  bottom: 0;
+  height: 60%;
+  top: auto;
+}
+
+.error_page .intro__content {
+  position: relative;
+  z-index: 2;
+  padding-top: 158px;
+  margin: 0 auto;
+  max-width: 556px;
+  -webkit-transform: translateX(-95px);
+      -ms-transform: translateX(-95px);
+          transform: translateX(-95px);
+}
+
+.error_page .intro__content .content__img {
+  margin-left: -90px;
+}
+
+.error_page .intro__content .content__info {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 52px;
+}
+
+.error_page .intro__content .content__info .info__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+.error_page .intro__content .content__info .info__text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.error_page .intro__content .content__link {
+  display: block;
+  margin-top: 90px;
+}
+
 .button {
   position: relative;
   color: #fff;
@@ -4443,6 +4500,13 @@ a {
     font-weight: 600;
     line-height: 63px;
     margin-bottom: 40px;
+  }
+
+  .error_page .intro__content {
+    -webkit-transform: translateX(-75px);
+        -ms-transform: translateX(-75px);
+            transform: translateX(-75px);
+    padding-top: 100px;
   }
 
   .right_line {
@@ -5647,6 +5711,17 @@ a {
 
   .policy_page .content__info {
     margin-left: 0px;
+  }
+
+  .error_page .intro .center_line {
+    display: none;
+  }
+
+  .error_page .intro__content {
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+    padding-top: 100px;
   }
 
   .wrapper {
@@ -6948,6 +7023,22 @@ a {
 
   .main_page .news .news__content .content__slider .slider__slide .slide__info {
     padding: 16px 20px 20px 17px;
+  }
+
+  .error_page .intro__content {
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+    padding-top: 100px;
+  }
+
+  .error_page .intro__content .content__img {
+    margin-left: -10vw;
+    max-width: 70vw;
+  }
+
+  .error_page .intro__content .content__info {
+    padding: 0px 20px;
   }
 }
 
