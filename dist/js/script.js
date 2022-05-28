@@ -310,8 +310,26 @@ navbarBtns.forEach(navbarBtn=>{
 const requestDemoBtns = document.querySelectorAll('.request_demo_btn')
 const requestDemoModal = document.getElementById("requestDemoModal")
 
-
 if(requestDemoBtns.length && requestDemoModal){
+    const modalDiv = requestDemoModal.querySelectorAll('.form__div')
+
+    modalDiv.forEach(block=>{
+        let blockInput = block.querySelector('.form__input')
+        let blockLabel = block.querySelector('.form__label')
+
+        blockInput.addEventListener('focus',(e)=>{
+            blockInput.classList.add('focusedInput')
+            blockLabel.classList.add('focusedLabel')
+        })
+
+        blockInput.addEventListener('blur',()=>{
+            if(blockInput.value.length < 1){
+                blockInput.classList.remove('focusedInput')
+                blockLabel.classList.remove('focusedLabel')
+            }
+        })
+    })
+
     requestDemoBtns.forEach((btn)=>{
         btn.addEventListener('click',(e)=>{
             requestDemoModal.style.display = "flex"

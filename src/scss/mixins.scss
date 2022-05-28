@@ -113,6 +113,25 @@
                         padding: 17px 14px 11px 14px;
                     }
                 }
+
+                .focusedInput{
+                  padding: 17px 23px 11px 23px !important;
+                    @media screen and (max-width: 500px) {
+                        padding: 17px 14px 11px 14px !important;
+                    }
+                }
+
+                .focusedLabel{
+                  top: 2px !important;
+                  font-size: 12px !important;
+                  font-weight: 400 !important;
+                  color: #555555 !important;
+                  z-index: 10 !important;
+
+                  @media screen and (max-width: 500px) {
+                    font-size: 10px !important;
+                  }
+                }
         
                 .form__label {
                   transition: all .2s linear;
@@ -120,6 +139,7 @@
                   left: 24px;
                   top: 14px;
                   z-index: 10;
+                  cursor:text;
                   @include text(#1D1D1D, 18px, 600);
 
                   @media screen and (max-width: 500px) {

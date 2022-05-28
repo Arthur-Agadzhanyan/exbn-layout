@@ -3577,6 +3577,18 @@ template {
   padding: 17px 23px 11px 23px;
 }
 
+.order_modal .modal__content__form .form__div .focusedInput {
+  padding: 17px 23px 11px 23px !important;
+}
+
+.order_modal .modal__content__form .form__div .focusedLabel {
+  top: 2px !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: #555555 !important;
+  z-index: 10 !important;
+}
+
 .order_modal .modal__content__form .form__div .form__label {
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
@@ -3585,6 +3597,7 @@ template {
   left: 24px;
   top: 14px;
   z-index: 10;
+  cursor: text;
   color: #1D1D1D;
   font-size: 18px;
   font-weight: 600;
@@ -8074,6 +8087,14 @@ a {
     padding: 17px 14px 11px 14px;
   }
 
+  .order_modal .modal__content__form .form__div .focusedInput {
+    padding: 17px 14px 11px 14px !important;
+  }
+
+  .order_modal .modal__content__form .form__div .focusedLabel {
+    font-size: 10px !important;
+  }
+
   .order_modal .modal__content__form .form__div .form__label {
     left: 14px;
   }
@@ -8589,6 +8610,18 @@ a {
     padding: 17px 23px 11px 23px;
   }
 
+  .order_modal .modal__content__form .form__div .focusedInput {
+    padding: 17px 23px 11px 23px !important;
+  }
+
+  .order_modal .modal__content__form .form__div .focusedLabel {
+    top: 2px !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: #555555 !important;
+    z-index: 10 !important;
+  }
+
   .order_modal .modal__content__form .form__div .form__label {
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
@@ -8597,6 +8630,7 @@ a {
     left: 24px;
     top: 14px;
     z-index: 10;
+    cursor: text;
     color: #1D1D1D;
     font-size: 18px;
     font-weight: 600;
@@ -8765,6 +8799,14 @@ a {
   .order_modal .modal__content__form .form__div .form__input:focus,
   .order_modal .modal__content__form .form__div .form__input:not(:placeholder-shown) {
     padding: 17px 14px 11px 14px;
+  }
+
+  .order_modal .modal__content__form .form__div .focusedInput {
+    padding: 17px 14px 11px 14px !important;
+  }
+
+  .order_modal .modal__content__form .form__div .focusedLabel {
+    font-size: 10px !important;
   }
 
   .order_modal .modal__content__form .form__div .form__label {
