@@ -155,8 +155,7 @@
                 align-items: center;
                 justify-content: space-between;
                 margin-bottom: 0;
-                margin-top: 24px;
-                margin-left: 30px;
+                margin-top: 6px;
                 text-align: left;
         
                 .item__check{
@@ -177,7 +176,7 @@
                     min-height: 22px;
                     border-radius: 4px;
                     background: transparent;
-                    border: 1px solid #848484;
+                    border: 2px solid #848484;
                     transition: .1s linear;
         
                     &:before{
@@ -187,9 +186,9 @@
                       position: absolute;
                       top: 50%;
                       left: 50%;
-                      transform: translate(-50%,-50%);
+                      transform: translate(-50%,-50%) scale(1.2);
         
-                      width: 15px;
+                      width: 18px;
                       height: 11px;
                       background: url("../img/icons/checked.svg") no-repeat center;
         
@@ -198,7 +197,7 @@
                   }
         
                   .check__input:checked + .check__custom{
-                    background: white;
+                    // background: white;
                   }
         
                   .check__input:checked + .check__custom:before{
@@ -207,7 +206,7 @@
         
                   .check__text{
                     margin-left: 8px;
-                    @include text($grey-1, 14px, 400);
+                    @include text(#848484, 14px, 400);
                     transition: .1s linear;
 
                     @media screen and (max-width: 450px) {
@@ -228,6 +227,7 @@
 
         .modal__btn{
             margin-top: 24px;
+            margin-bottom: 35px;
             max-width: 276px;
         }
 

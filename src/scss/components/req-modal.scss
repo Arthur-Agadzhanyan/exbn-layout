@@ -23,7 +23,7 @@
 
     .modal__content{
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 28px;
 
         @media screen and (max-width: 450px) {
             padding-top: 60px !important;
@@ -45,6 +45,16 @@
         @media screen and (max-width: 500px) {
             height: 95vh;
             
+        }
+
+        .form__text{
+            margin-top: 25px;
+            @include text(#737374,12px,400,15px);
+
+            a{
+                color: #737374;
+                text-decoration: underline;
+            }
         }
     }
 

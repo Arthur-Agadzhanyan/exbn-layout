@@ -3618,8 +3618,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 0;
-  margin-top: 24px;
-  margin-left: 30px;
+  margin-top: 6px;
   text-align: left;
 }
 
@@ -3644,7 +3643,7 @@ template {
   min-height: 22px;
   border-radius: 4px;
   background: transparent;
-  border: 1px solid #848484;
+  border: 2px solid #848484;
   -webkit-transition: .1s linear;
   -o-transition: .1s linear;
   transition: .1s linear;
@@ -3656,19 +3655,15 @@ template {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 15px;
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+      -ms-transform: translate(-50%, -50%) scale(1.2);
+          transform: translate(-50%, -50%) scale(1.2);
+  width: 18px;
   height: 11px;
   background: url("../img/icons/checked.svg") no-repeat center;
   -webkit-transition: .1s linear;
   -o-transition: .1s linear;
   transition: .1s linear;
-}
-
-.order_modal .modal__content__form .form__check_item .item__check .check__input:checked + .check__custom {
-  background: white;
 }
 
 .order_modal .modal__content__form .form__check_item .item__check .check__input:checked + .check__custom:before {
@@ -3677,7 +3672,7 @@ template {
 
 .order_modal .modal__content__form .form__check_item .item__check .check__text {
   margin-left: 8px;
-  color: #1D1D1D;
+  color: #848484;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
@@ -3692,18 +3687,32 @@ template {
 
 .order_modal .modal__content .modal__btn {
   margin-top: 24px;
+  margin-bottom: 35px;
   max-width: 276px;
 }
 
 .order_modal .modal__content {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 28px;
 }
 
 .order_modal .modal__content .content__container {
   max-width: 570px;
   margin: 0 auto;
   text-align: left;
+}
+
+.order_modal .modal__content .form__text {
+  margin-top: 25px;
+  color: #737374;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.order_modal .modal__content .form__text a {
+  color: #737374;
+  text-decoration: underline;
 }
 
 .order_modal__text {
@@ -3744,6 +3753,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #E9623E;
 }
 
 .wrapper {
@@ -8708,8 +8718,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 0;
-    margin-top: 24px;
-    margin-left: 30px;
+    margin-top: 6px;
     text-align: left;
   }
 
@@ -8734,7 +8743,7 @@ a {
     min-height: 22px;
     border-radius: 4px;
     background: transparent;
-    border: 1px solid #848484;
+    border: 2px solid #848484;
     -webkit-transition: .1s linear;
     -o-transition: .1s linear;
     transition: .1s linear;
@@ -8746,19 +8755,15 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 15px;
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+        -ms-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+    width: 18px;
     height: 11px;
     background: url("../img/icons/checked.svg") no-repeat center;
     -webkit-transition: .1s linear;
     -o-transition: .1s linear;
     transition: .1s linear;
-  }
-
-  .order_modal .modal__content__form .form__check_item .item__check .check__input:checked + .check__custom {
-    background: white;
   }
 
   .order_modal .modal__content__form .form__check_item .item__check .check__input:checked + .check__custom:before {
@@ -8767,7 +8772,7 @@ a {
 
   .order_modal .modal__content__form .form__check_item .item__check .check__text {
     margin-left: 8px;
-    color: #1D1D1D;
+    color: #848484;
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
@@ -8782,6 +8787,7 @@ a {
 
   .order_modal .modal__content .modal__btn {
     margin-top: 24px;
+    margin-bottom: 35px;
     max-width: 276px;
   }
 
