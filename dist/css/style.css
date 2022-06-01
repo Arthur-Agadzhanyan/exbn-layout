@@ -3633,7 +3633,9 @@ template {
 }
 
 .order_modal .modal__content__form .form__check_item .item__check .check__input {
-  display: none;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }
 
 .order_modal .modal__content__form .form__check_item .item__check .check__custom {
@@ -8733,7 +8735,9 @@ a {
   }
 
   .order_modal .modal__content__form .form__check_item .item__check .check__input {
-    display: none;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
   }
 
   .order_modal .modal__content__form .form__check_item .item__check .check__custom {
