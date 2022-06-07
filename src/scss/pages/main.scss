@@ -1208,7 +1208,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background: #fff;
+                    background: transparent;
                     min-height: 276px;
 
                     &-lower{
@@ -1249,7 +1249,7 @@
 
                 .list__item {
                     flex: 0 1 31%;
-                    background: #fff;
+                    background: #131313;
                     margin-bottom: 24px;
                     min-height: 276px;
 

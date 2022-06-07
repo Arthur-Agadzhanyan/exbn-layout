@@ -27,11 +27,11 @@
     <main class="current_ml_page products wrapper">
         @@include('_header.html')
 
-        <section class="intro" data-aos="fade-down" data-aos-duration="1000">
+        <section class="intro">
             <div class="container">
                 <div class="intro__content">
 
-                    <div class="content__info">
+                    <div class="content__info" data-aos="fade-down" data-aos-duration="1000">
                         <div class="info__exebenus">
                             <img src="img/logos/exebenus.svg" alt="">
                         </div>
@@ -67,9 +67,9 @@
         <section class="about_product">
             <div class="container">
                  <div class="about_product_content">
-                    <div class="about_item" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="about_item">
                         <div class="text_section ltr_block">
-                            <p class="section_title">About product</p>
+                            <p class="section_title" data-aos="fade-right" data-aos-duration="1500">About product</p>
                             <p class="about_subtitle">
                                 Exebenus Pulse digitalizes the information exchange between office and rig.
                                 Why is that important? Because it means your years of experience, best practices and
@@ -81,7 +81,7 @@
                             <img src="/img/current_ml/about/1.png" alt="" class="about_img">
                         </div>
                     </div>
-                    <div class="about_item" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="about_item">
                         <div class="image_section">
                             <img src="/img/current_ml/about/2.png" alt="" class="about_img">
                         </div>
@@ -102,13 +102,13 @@
 
         <section class="optimization">
             <div class="container">
-                <div class="optimization__content" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="optimization__content">
                     <div class="content__circle">
                         <img src="img/current_ml/optimization/1.svg" alt="">
                     </div>
 
                     <div class="content__rop">
-                        <h3 class="rop__title">Real-time<br>ROP Optimization</h3>
+                        <h3 class="rop__title" data-aos="fade-right" data-aos-duration="1500">Real-time<br>ROP Optimization</h3>
 
                         <div class="rop__graphs">
                             <div class="graphs__item">
@@ -162,9 +162,9 @@
 
         <section class="stuck_pipe">
             <div class="container">
-                <div class="stuck_pipe__content" data-aos="fade-up" data-aos-duration="1500">
+                <div class="stuck_pipe__content">
                     <div class="content__container">
-                        <div class="content__text">Real-time stuck pipe warnings</div>
+                        <div class="content__text" data-aos="fade-right" data-aos-duration="1500">Real-time stuck pipe warnings</div>
                         <div class="content__graph">
                             <svg width="865" height="500" viewBox="0 0 865 500" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" >
                                 <path class="" d="M522.616 477.672C522.296 477.96 521.832 478.104 521.368 478.104C520.424 478.104 519.912 477.56 519.912 476.568V471.544H522.472V470.584H519.912V468.744H518.776V470.584H517.272V471.544H518.776V476.632C518.776 478.184 519.656 479.08 521.24 479.08C521.896 479.08 522.568 478.888 523.016 478.488L522.616 477.672ZM529.372 470.52C527.948 470.52 526.844 471.08 526.22 472.056V467.128H525.084V479H526.22V474.584C526.22 472.664 527.356 471.544 529.164 471.544C530.764 471.544 531.692 472.456 531.692 474.232V479H532.828V474.12C532.828 471.704 531.42 470.52 529.372 470.52ZM543.287 474.792C543.287 472.264 541.575 470.52 539.207 470.52C536.839 470.52 535.095 472.296 535.095 474.792C535.095 477.288 536.887 479.08 539.511 479.08C540.839 479.08 542.007 478.6 542.759 477.704L542.119 476.968C541.479 477.704 540.567 478.072 539.543 478.072C537.703 478.072 536.359 476.904 536.231 475.144H543.271C543.271 475.016 543.287 474.888 543.287 474.792ZM539.207 471.496C540.855 471.496 542.055 472.648 542.199 474.296H536.231C536.375 472.648 537.575 471.496 539.207 471.496ZM557.915 477.176C557.051 477.8 556.059 478.04 554.987 478.04C552.235 478.04 550.203 476.056 550.203 473.4C550.203 470.728 552.235 468.76 555.003 468.76C556.315 468.76 557.435 469.144 558.379 470.072L559.115 469.32C558.123 468.248 556.651 467.704 554.955 467.704C551.531 467.704 549.035 470.12 549.035 473.4C549.035 476.68 551.531 479.096 554.939 479.096C556.491 479.096 557.995 478.616 559.051 477.672V473.4H557.915V477.176ZM565.602 479.08C568.066 479.08 569.874 477.288 569.874 474.792C569.874 472.296 568.066 470.52 565.602 470.52C563.138 470.52 561.314 472.296 561.314 474.792C561.314 477.288 563.138 479.08 565.602 479.08ZM565.602 478.072C563.81 478.072 562.466 476.76 562.466 474.792C562.466 472.824 563.81 471.512 565.602 471.512C567.394 471.512 568.722 472.824 568.722 474.792C568.722 476.76 567.394 478.072 565.602 478.072ZM575.633 479.08C578.097 479.08 579.905 477.288 579.905 474.792C579.905 472.296 578.097 470.52 575.633 470.52C573.169 470.52 571.345 472.296 571.345 474.792C571.345 477.288 573.169 479.08 575.633 479.08ZM575.633 478.072C573.841 478.072 572.497 476.76 572.497 474.792C572.497 472.824 573.841 471.512 575.633 471.512C577.425 471.512 578.753 472.824 578.753 474.792C578.753 476.76 577.425 478.072 575.633 478.072ZM588.769 467.128V472.184C588.065 471.096 586.913 470.52 585.569 470.52C583.169 470.52 581.377 472.248 581.377 474.792C581.377 477.336 583.169 479.08 585.569 479.08C586.961 479.08 588.129 478.472 588.817 477.336V479H589.905V467.128H588.769ZM585.665 478.072C583.873 478.072 582.529 476.76 582.529 474.792C582.529 472.824 583.873 471.512 585.665 471.512C587.441 471.512 588.785 472.824 588.785 474.792C588.785 476.76 587.441 478.072 585.665 478.072ZM593.196 477.336C592.716 477.336 592.348 477.704 592.348 478.2C592.348 478.616 592.588 478.92 592.924 479.016L592.38 481.336H593.148L593.82 479.128C593.98 478.68 594.044 478.472 594.044 478.2C594.044 477.72 593.692 477.336 593.196 477.336ZM604.679 477.672C604.359 477.96 603.895 478.104 603.431 478.104C602.487 478.104 601.975 477.56 601.975 476.568V471.544H604.535V470.584H601.975V468.744H600.839V470.584H599.335V471.544H600.839V476.632C600.839 478.184 601.719 479.08 603.303 479.08C603.959 479.08 604.631 478.888 605.079 478.488L604.679 477.672ZM611.435 470.52C610.011 470.52 608.907 471.08 608.283 472.056V467.128H607.147V479H608.283V474.584C608.283 472.664 609.419 471.544 611.227 471.544C612.827 471.544 613.755 472.456 613.755 474.232V479H614.891V474.12C614.891 471.704 613.483 470.52 611.435 470.52ZM625.35 474.792C625.35 472.264 623.638 470.52 621.27 470.52C618.902 470.52 617.158 472.296 617.158 474.792C617.158 477.288 618.95 479.08 621.574 479.08C622.902 479.08 624.07 478.6 624.822 477.704L624.182 476.968C623.542 477.704 622.63 478.072 621.606 478.072C619.766 478.072 618.422 476.904 618.294 475.144H625.334C625.334 475.016 625.35 474.888 625.35 474.792ZM621.27 471.496C622.918 471.496 624.118 472.648 624.262 474.296H618.294C618.438 472.648 619.638 471.496 621.27 471.496ZM639.146 473.224C640.17 472.808 640.858 471.96 640.858 470.68C640.858 468.856 639.418 467.8 636.922 467.8H632.09V479H637.242C640.042 479 641.45 477.912 641.45 476.008C641.45 474.488 640.586 473.544 639.146 473.224ZM636.842 468.776C638.634 468.776 639.674 469.464 639.674 470.808C639.674 472.152 638.634 472.84 636.842 472.84H633.274V468.776H636.842ZM637.226 478.024H633.274V473.816H637.226C639.194 473.816 640.266 474.456 640.266 475.912C640.266 477.384 639.194 478.024 637.226 478.024ZM646.856 470.52C645.528 470.52 644.28 470.936 643.432 471.656L643.944 472.504C644.632 471.896 645.656 471.512 646.744 471.512C648.312 471.512 649.128 472.296 649.128 473.736V474.248H646.456C644.04 474.248 643.208 475.336 643.208 476.632C643.208 478.088 644.376 479.08 646.28 479.08C647.672 479.08 648.664 478.552 649.176 477.688V479H650.264V473.784C650.264 471.608 649.032 470.52 646.856 470.52ZM646.456 478.184C645.112 478.184 644.328 477.576 644.328 476.6C644.328 475.736 644.856 475.096 646.488 475.096H649.128V476.472C648.68 477.576 647.736 478.184 646.456 478.184ZM659.925 467.128V472.184C659.221 471.096 658.069 470.52 656.725 470.52C654.325 470.52 652.533 472.248 652.533 474.792C652.533 477.336 654.325 479.08 656.725 479.08C658.117 479.08 659.285 478.472 659.973 477.336V479H661.061V467.128H659.925ZM656.821 478.072C655.029 478.072 653.685 476.76 653.685 474.792C653.685 472.824 655.029 471.512 656.821 471.512C658.597 471.512 659.941 472.824 659.941 474.792C659.941 476.76 658.597 478.072 656.821 478.072ZM671.356 470.52C670.028 470.52 668.78 470.936 667.932 471.656L668.444 472.504C669.132 471.896 670.156 471.512 671.244 471.512C672.812 471.512 673.628 472.296 673.628 473.736V474.248H670.956C668.54 474.248 667.708 475.336 667.708 476.632C667.708 478.088 668.876 479.08 670.78 479.08C672.172 479.08 673.164 478.552 673.676 477.688V479H674.764V473.784C674.764 471.608 673.532 470.52 671.356 470.52ZM670.956 478.184C669.612 478.184 668.828 477.576 668.828 476.6C668.828 475.736 669.356 475.096 670.988 475.096H673.628V476.472C673.18 477.576 672.236 478.184 670.956 478.184ZM682.138 470.52C680.682 470.52 679.546 471.112 678.938 472.136V470.584H677.85V479H678.986V474.584C678.986 472.664 680.122 471.544 681.93 471.544C683.53 471.544 684.458 472.456 684.458 474.232V479H685.594V474.12C685.594 471.704 684.186 470.52 682.138 470.52ZM695.253 467.128V472.184C694.549 471.096 693.397 470.52 692.053 470.52C689.653 470.52 687.861 472.248 687.861 474.792C687.861 477.336 689.653 479.08 692.053 479.08C693.445 479.08 694.613 478.472 695.301 477.336V479H696.389V467.128H695.253ZM692.149 478.072C690.357 478.072 689.013 476.76 689.013 474.792C689.013 472.824 690.357 471.512 692.149 471.512C693.925 471.512 695.269 472.824 695.269 474.792C695.269 476.76 693.925 478.072 692.149 478.072ZM707.772 477.672C707.452 477.96 706.988 478.104 706.524 478.104C705.58 478.104 705.068 477.56 705.068 476.568V471.544H707.628V470.584H705.068V468.744H703.932V470.584H702.428V471.544H703.932V476.632C703.932 478.184 704.812 479.08 706.396 479.08C707.052 479.08 707.724 478.888 708.172 478.488L707.772 477.672ZM714.528 470.52C713.104 470.52 712 471.08 711.376 472.056V467.128H710.24V479H711.376V474.584C711.376 472.664 712.512 471.544 714.32 471.544C715.92 471.544 716.848 472.456 716.848 474.232V479H717.984V474.12C717.984 471.704 716.576 470.52 714.528 470.52ZM728.444 474.792C728.444 472.264 726.732 470.52 724.364 470.52C721.996 470.52 720.252 472.296 720.252 474.792C720.252 477.288 722.044 479.08 724.668 479.08C725.996 479.08 727.164 478.6 727.916 477.704L727.276 476.968C726.636 477.704 725.724 478.072 724.7 478.072C722.86 478.072 721.516 476.904 721.388 475.144H728.428C728.428 475.016 728.444 474.888 728.444 474.792ZM724.364 471.496C726.012 471.496 727.212 472.648 727.356 474.296H721.388C721.532 472.648 722.732 471.496 724.364 471.496ZM739.695 479.096C742.559 479.096 744.287 477.432 744.287 474.216V467.8H743.135V474.168C743.135 476.824 741.887 478.04 739.695 478.04C737.519 478.04 736.271 476.824 736.271 474.168V467.8H735.087V474.216C735.087 477.432 736.831 479.096 739.695 479.096ZM754.319 470.584V472.2C753.615 471.096 752.399 470.52 750.991 470.52C748.591 470.52 746.767 472.168 746.767 474.584C746.767 477 748.591 478.68 750.991 478.68C752.367 478.68 753.567 478.12 754.271 477.048V478.12C754.271 480.2 753.295 481.176 751.167 481.176C749.871 481.176 748.655 480.744 747.855 480.024L747.279 480.888C748.159 481.72 749.663 482.184 751.199 482.184C753.983 482.184 755.407 480.872 755.407 477.976V470.584H754.319ZM751.103 477.672C749.247 477.672 747.919 476.408 747.919 474.584C747.919 472.76 749.247 471.512 751.103 471.512C752.959 471.512 754.303 472.76 754.303 474.584C754.303 476.408 752.959 477.672 751.103 477.672ZM758.584 479H759.72V467.128H758.584V479ZM768.833 470.584L765.665 477.736L762.497 470.584H761.313L765.073 478.984L764.705 479.8C764.225 480.856 763.713 481.208 762.961 481.208C762.353 481.208 761.841 480.984 761.425 480.568L760.897 481.416C761.409 481.928 762.161 482.184 762.945 482.184C764.145 482.184 765.041 481.656 765.745 480.008L769.953 470.584H768.833Z" fill="white"/>
@@ -211,28 +211,28 @@
                 <div class="benefits_content">
                     <h4 class="section_title" data-aos="fade-right" data-aos-duration="1500">Benefits</h4>
                     <div class="content__advantages">
-                            <div class="advantages__item" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="advantages__item">
                                 <div class="item__image">
                                     <img src="img/icons/click_arrow.svg" alt="">
                                 </div>
                                 <div class="item__text">No need for training on offset data</div>
                             </div>
 
-                            <div class="advantages__item" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="advantages__item">
                                 <div class="item__image">
                                     <img src="img/icons/scale.svg" alt="">
                                 </div>
                                 <div class="item__text">Minimal config time to get started</div>
                             </div>
 
-                            <div class="advantages__item" data-aos="fade-up" data-aos-duration="2500">
+                            <div class="advantages__item">
                                 <div class="item__image">
                                     <img src="img/icons/not_customizable.svg" alt="">
                                 </div>
                                 <div class="item__text">Easily scalable<br>to any # of wells</div>
                             </div>
 
-                            <div class="advantages__item" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="advantages__item">
                                 <div class="item__image">
                                     <img src="img/icons/replay.svg" alt="">
                                 </div>
@@ -246,10 +246,10 @@
         </section>
 
         <section class="key_aspects">
-                <div class="key_aspects_wrapper" data-aos="fade-right" data-aos-duration="1500">
+                <div class="key_aspects_wrapper">
                     <div class="container">
                         <div class="key_aspects__content">
-                            <p class="content__title">Key aspects</p>
+                            <p class="content__title" data-aos="fade-right" data-aos-duration="1500">Key aspects</p>
 
                             <div class="content__slider">
                                 <div class="key_aspects__slider" id="current_ml_page-key_aspects_swiper">
@@ -379,8 +379,8 @@
         </section>
         
         <section class="products__how_work">
-            <div class="how_work__content container" data-aos="fade-up" data-aos-duration="1500">
-                <h3 class="section_title">How it work?</h3>
+            <div class="how_work__content container">
+                <h3 class="section_title" data-aos="fade-right" data-aos-duration="1500">How it work?</h3>
 
                 <div class="content__text">
                     <div class="text__item">
@@ -441,7 +441,7 @@
                 <div class="agents__content">
                     <h3 class="section_title" data-aos="fade-right" data-aos-duration="1500">Agents portfolio</h3>
 
-                    <div class="slider__container"  data-aos="fade-right" data-aos-duration="1500">
+                    <div class="slider__container">
                         <div id="current_ml-agents_slider" class="content__slider">
                             <div class="slider__content swiper-wrapper">
                                 <div class="content__item swiper-slide">
@@ -603,32 +603,32 @@
                         <h4 class="section_title" data-aos="fade-right" data-aos-duration="1500">Value creation</h4>
 
                         <div class="info__list">
-                            <div class="list__item" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="list__item">
                                 <img src="img/current_ml/value_creation/triangle.svg" class="item__triangle" alt="">
                                 <h4 class="item__title">92 <span>of 100</span></h4>
                                 <p class="item__text">Valid alarms</p>
                             </div>
 
-                            <div class="list__item" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="list__item">
                                 <img src="img/current_ml/value_creation/triangle.svg" class="item__triangle" alt="">
                                 <h4 class="item__title">2,1 <span>hours</span></h4>
                                 <p class="item__text">Average prediction<br> heads-up time</p>
                             </div>
 
-                            <div class="list__item" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="list__item">
                                 <img src="img/current_ml/value_creation/triangle.svg" class="item__triangle" alt="">
                                 <h4 class="item__title">100<span>%</span></h4>
                                 <p class="item__text">Accurately predicted<br> drill incidents</p>
                             </div>
 
-                            <div class="list__item" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="list__item">
                                 <img src="img/current_ml/value_creation/triangle.svg" class="item__triangle" alt="">
                                 <h4 class="item__title">5,2M<span>USD</span></h4>
                                 <p class="item__text">Average Cost saved per well</p>
                             </div>
                         </div>
                     </div>
-                    <div class="content__image" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="content__image">
                         <img src="img/current_ml/value_creation/1.png" alt="">
                     </div>
                 </div>
@@ -637,8 +637,8 @@
         
         <section class="signup_section">
             <div class="container">
-                <div class="signup_section_content" data-aos="fade-up" data-aos-duration="1500">
-                    <h4 class="section_title">Sign up for free trial</h4>
+                <div class="signup_section_content">
+                    <h4 class="section_title" data-aos="fade-right" data-aos-duration="1500">Sign up for free trial</h4>
                     <p class="signup_section_subtitle">Sign up to experience the power of Exebenus Machine Learning</p>
                     <button class="button button-filled info__btn"><span>Sign up for free trial</span></button>
                 </div>

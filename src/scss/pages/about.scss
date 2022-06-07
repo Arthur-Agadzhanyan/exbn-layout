@@ -394,7 +394,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background: #fff;
+                    background: #131313;
                     min-height: 276px;
 
                     &-lower{
@@ -435,7 +435,7 @@
 
                 .list__item {
                     flex: 0 1 31%;
-                    background: #fff;
+                    background: #131313;
                     margin-bottom: 24px;
                     min-height: 276px;
 
@@ -477,9 +477,6 @@
                     }
                     @media screen and (max-width: 400px) {
                         min-height: 160px;
-                    }
-                    @media screen and (max-width: 350px) {
-                        min-height: 140px;
                     }
                 }
 
