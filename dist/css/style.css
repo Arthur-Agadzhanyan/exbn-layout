@@ -2108,7 +2108,8 @@ template {
   font-size: 64px;
   font-weight: 600;
   line-height: 78px;
-  max-width: 227px;
+  max-width: 307px;
+  margin-top: 40px;
   margin-bottom: 73px;
 }
 
@@ -6540,6 +6541,10 @@ a {
   .news_page .news_audio {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .about_page .intro .intro__content .content__info .info__title {
+    margin-top: 0px;
   }
 
   .about_page .partners .partners__content .content__list .list__item {

@@ -27,7 +27,8 @@
 
                 .info__title {
                     @include text(#fff,64px,600,78px);
-                    max-width: 227px;
+                    max-width: 307px;
+                    margin-top: 40px;
                     margin-bottom: 73px;
 
                     span{
@@ -86,6 +87,9 @@
 
                     @media screen and (max-width: 850px) {
                         max-width: 100%;
+                    }
+                    @media screen and (max-width: 800px) {
+                        margin-top: 0px;
                     }
                     @media screen and (max-width: 700px) {
                         margin-left: 5px;
