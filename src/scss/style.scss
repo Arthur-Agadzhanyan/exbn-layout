@@ -1184,3 +1184,39 @@ a{
           min-width: 250px !important;
         }
 }
+
+.with_scrollbar{
+
+    .swiper-wrapper{
+        padding-bottom: 60px;
+        @media screen and (max-width: 1100px) {
+            padding-bottom: 0px;
+        }
+    }
+
+    .swiper-scrollbar{
+        bottom: 17px !important;
+        background: #131313;
+        height: 8px !important;
+
+        .swiper-scrollbar-drag{
+            background: $orange;
+            height: 16px;
+            margin-top: -4px;
+
+            position: relative !important;
+
+            &:after{
+                content: url("../img/icons/scrollbar/lines.svg");
+                position: absolute;
+                max-width: 80%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+            display: none !important;
+        }
+    }
+}

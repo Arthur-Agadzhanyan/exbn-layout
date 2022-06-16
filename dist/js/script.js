@@ -36,12 +36,24 @@ const mainPagePartnersSlider = new Swiper('#main_page-partners_slider', {
     breakpoints:{
         1100:{
             slidesPerView: 4.3,
+            scrollbar: {
+                el:'#main_page-partners_slider_scrollbar',
+                draggable: true,
+            },
         },
         1500:{
             slidesPerView: 4.7,
+            scrollbar: {
+                el:'#main_page-partners_slider_scrollbar',
+                draggable: true,
+            },
         },
         1750:{
             slidesPerView: 5.7,
+            scrollbar: {
+                el:'#main_page-partners_slider_scrollbar',
+                draggable: true,
+            },
         }
     }
 });
@@ -70,12 +82,24 @@ const mainPageNewsSlider = new Swiper('#main_page-news_slider', {
         },
         1100:{
             slidesPerView: 2.5,
+            scrollbar: {
+                el:'#main_page-news_slider_scrollbar',
+                draggable: true,
+            },
         },
         1500:{
             slidesPerView: 3.3,
+            scrollbar: {
+                el:'#main_page-news_slider_scrollbar',
+                draggable: true,
+            },
         },
         1750:{
             slidesPerView: 3.8,
+            scrollbar: {
+                el:'#main_page-news_slider_scrollbar',
+                draggable: true,
+            },
         }
     }
 });
@@ -136,12 +160,24 @@ const aboutPagePartnersSlider = new Swiper('#about_page-partners_slider', {
     breakpoints:{
         1100:{
             slidesPerView: 4.3,
+            scrollbar: {
+                el:'#about_page-partners_slider_scrollbar',
+                draggable: true,
+            },
         },
         1500:{
             slidesPerView: 4.7,
+            scrollbar: {
+                el:'#about_page-partners_slider_scrollbar',
+                draggable: true,
+            },
         },
         1750:{
             slidesPerView: 5.7,
+            scrollbar: {
+                el:'#about_page-partners_slider_scrollbar',
+                draggable: true,
+            },
         }
     }
 });
@@ -274,7 +310,7 @@ if(imageWindmill){
         imageWindmill.style.transform = `translateX(5%) rotate(${deg}deg)`;
         deg +=15;
     },200) 
-}
+};
 
 AOS.init()
 

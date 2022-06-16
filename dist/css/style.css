@@ -4422,6 +4422,33 @@ a {
   left: 0% !important;
 }
 
+.with_scrollbar .swiper-wrapper {
+  padding-bottom: 60px;
+}
+
+.with_scrollbar .swiper-scrollbar {
+  bottom: 17px !important;
+  background: #131313;
+  height: 8px !important;
+}
+
+.with_scrollbar .swiper-scrollbar .swiper-scrollbar-drag {
+  background: #E9623E;
+  height: 16px;
+  margin-top: -4px;
+  position: relative !important;
+}
+
+.with_scrollbar .swiper-scrollbar .swiper-scrollbar-drag:after {
+  content: url("../img/icons/scrollbar/lines.svg");
+  position: absolute;
+  max-width: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 @media screen and (min-width: 2000px) {
   .current_ml_page .agents .content__image img {
     width: 100vw;
@@ -5914,6 +5941,14 @@ a {
   .products .key_aspects .key_aspects_wrapper {
     max-width: 100%;
     width: 100%;
+  }
+
+  .with_scrollbar .swiper-wrapper {
+    padding-bottom: 0px;
+  }
+
+  .with_scrollbar .swiper-scrollbar {
+    display: none !important;
   }
 }
 
