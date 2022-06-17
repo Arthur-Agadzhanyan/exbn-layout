@@ -846,5 +846,11 @@
                 padding-top: 80px;
             }
         }
+
+        .parg{
+            margin-top: -30px;
+            padding-bottom: 30px;
+            @include text(#fff,12px,400,15px)
+        }
     }
 }

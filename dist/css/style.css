@@ -2859,6 +2859,15 @@ template {
   max-width: 100%;
 }
 
+.current_ml_page .value_creation .parg {
+  margin-top: -30px;
+  padding-bottom: 30px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
 .pulse_page .about_product {
   position: relative;
   display: -webkit-box;
