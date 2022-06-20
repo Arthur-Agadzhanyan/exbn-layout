@@ -2,31 +2,31 @@ const mainPagePartnersSlider = new Swiper('#main_page-partners_slider', {
     slidesPerView: 5.7,
     speed: 1000,
     spaceBetween: 16,
+
     breakpoints:{
         1100:{
             slidesPerView: 4.3,
-            scrollbar: {
-                el:'#main_page-partners_slider_scrollbar',
-                draggable: true,
+            navigation: {
+                nextEl:'#main_page-partners_slider_next',
+                prevEl:'#main_page-partners_slider_prev'
             },
         },
         1500:{
             slidesPerView: 4.7,
-            scrollbar: {
-                el:'#main_page-partners_slider_scrollbar',
-                draggable: true,
+            navigation: {
+                nextEl:'#main_page-partners_slider_next',
+                prevEl:'#main_page-partners_slider_prev'
             },
         },
         1750:{
             slidesPerView: 5.7,
-            scrollbar: {
-                el:'#main_page-partners_slider_scrollbar',
-                draggable: true,
+            navigation: {
+                nextEl:'#main_page-partners_slider_next',
+                prevEl:'#main_page-partners_slider_prev'
             },
         }
     }
 });
-
 const mainPageNewsSlider = new Swiper('#main_page-news_slider', {
     speed: 1000,
     spaceBetween: 16,
@@ -51,23 +51,23 @@ const mainPageNewsSlider = new Swiper('#main_page-news_slider', {
         },
         1100:{
             slidesPerView: 2.5,
-            scrollbar: {
-                el:'#main_page-news_slider_scrollbar',
-                draggable: true,
+            navigation: {
+                prevEl:'#main_page-news_slider_prev',
+                nextEl:'#main_page-news_slider_next',
             },
         },
         1500:{
             slidesPerView: 3.3,
-            scrollbar: {
-                el:'#main_page-news_slider_scrollbar',
-                draggable: true,
+            navigation: {
+                prevEl:'#main_page-news_slider_prev',
+                nextEl:'#main_page-news_slider_next',
             },
         },
         1750:{
             slidesPerView: 3.8,
-            scrollbar: {
-                el:'#main_page-news_slider_scrollbar',
-                draggable: true,
+            navigation: {
+                prevEl:'#main_page-news_slider_prev',
+                nextEl:'#main_page-news_slider_next',
             },
         }
     }

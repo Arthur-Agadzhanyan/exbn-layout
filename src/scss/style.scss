@@ -1185,38 +1185,62 @@ a{
         }
 }
 
-.with_scrollbar{
+.with_navigation{
 
     .swiper-wrapper{
-        padding-bottom: 60px;
-        @media screen and (max-width: 1100px) {
-            padding-bottom: 0px;
+        position: relative;
+    }
+
+    .swiper-button-next{
+        width: auto;
+        top:0;
+        bottom: 0;
+        background: #fff;
+        margin-top: 0px;
+        height: 100%;
+        right: 0;
+        padding-right: 26px;
+        padding-left: 33px;
+        background: rgba(19, 19, 19, 0.8);
+
+        &:after{
+            content: '';
+            background-image: url('../img/pulse_page/slider_right_arrow.svg');
+            background-size: 100% 100%;
+            width: 48px;
+            height: 98px;
         }
     }
 
-    .swiper-scrollbar{
-        bottom: 17px !important;
-        background: #131313;
-        height: 8px !important;
+    .swiper-button-prev{
+        width: auto;
+        top:0;
+        bottom: 0;
+        background: #fff;
+        margin-top: 0px;
+        height: 100%;
+        left: -2px;
+        padding-right: 26px;
+        padding-left: 33px;
+        background: rgba(19, 19, 19, 0.8);
 
-        .swiper-scrollbar-drag{
-            background: $orange;
-            height: 16px;
-            margin-top: -4px;
-
-            position: relative !important;
-
-            &:after{
-                content: url("../img/icons/scrollbar/lines.svg");
-                position: absolute;
-                max-width: 80%;
-                left: 50%;
-                transform: translateX(-50%);
-            }
+        &:after{
+            content: '';
+            background-image: url('../img/pulse_page/slider_right_arrow.svg');
+            transform: rotate(180deg);
+            background-size: 100% 100%;
+            width: 48px;
+            height: 98px;
         }
+    }
 
+    .swiper-button-prev, .swiper-button-next{
         @media screen and (max-width: 1100px) {
-            display: none !important;
+            display: none;
         }
+    }
+    
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+        opacity: 0;
     }
 }

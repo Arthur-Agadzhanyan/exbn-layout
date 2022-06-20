@@ -5,24 +5,25 @@ const aboutPagePartnersSlider = new Swiper('#about_page-partners_slider', {
     breakpoints:{
         1100:{
             slidesPerView: 4.3,
-            scrollbar: {
-                el:'#about_page-partners_slider_scrollbar',
-                draggable: true,
+            navigation: {
+                nextEl:'#about_page-partners_slider_next',
+                prevEl:'#about_page-partners_slider_prev'
             },
         },
         1500:{
             slidesPerView: 4.7,
-            scrollbar: {
-                el:'#about_page-partners_slider_scrollbar',
-                draggable: true,
+            navigation: {
+                nextEl:'#about_page-partners_slider_next',
+                prevEl:'#about_page-partners_slider_prev'
             },
         },
         1750:{
             slidesPerView: 5.7,
-            scrollbar: {
-                el:'#about_page-partners_slider_scrollbar',
-                draggable: true,
+            navigation: {
+                nextEl:'#about_page-partners_slider_next',
+                prevEl:'#about_page-partners_slider_prev'
             },
         }
     }
 });
+
