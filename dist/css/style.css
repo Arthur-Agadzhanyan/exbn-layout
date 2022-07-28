@@ -527,9 +527,14 @@ template {
   margin-bottom: 92px;
 }
 
+.navbar_poppup .poppup__content .content__block .block__products .products__images .spotter {
+  height: 70px;
+}
+
 .navbar_poppup .poppup__content .content__block .block__products .products__images img {
+  display: block;
   height: 32px;
-  margin-bottom: 68px;
+  margin-bottom: 48px;
 }
 
 .navbar_poppup .poppup__content .content__block .block__menu {
@@ -898,12 +903,22 @@ template {
 }
 
 .main_page .intro__content .content__info .info__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 135px;
 }
 
 .main_page .intro__content .content__info .info__logos .logos__item {
   margin-right: 77px;
   height: 16px;
+}
+
+.main_page .intro__content .content__info .info__logos .logos__item-spotter {
+  height: 40px;
 }
 
 .main_page .intro__content .content__image {
@@ -1091,7 +1106,7 @@ template {
 
 .main_page .company__products .products__current_ml .current_ml__content .content__info .info__logo .logo__current_ml img {
   display: block;
-  max-height: 40px;
+  max-height: 116px;
 }
 
 .main_page .company__products .products__current_ml .current_ml__content .content__info .info__text {
@@ -3884,6 +3899,11 @@ a {
   height: 40px;
 }
 
+.products .intro__content .content__info .info__product .product__spotter {
+  height: 116px;
+  margin-bottom: 40px;
+}
+
 .products .intro__content .content__info .info__losung {
   max-width: 423px;
   color: #fff;
@@ -5020,6 +5040,10 @@ a {
         -ms-transform: scale(0.8);
             transform: scale(0.8);
     right: -20px;
+  }
+
+  .products .intro__content .content__info .info__product .product__spotter {
+    margin-bottom: 0px;
   }
 
   .products .intro__content .content__info .info__title {
@@ -6814,6 +6838,11 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+  .navbar_poppup .poppup__content .content__block .block__products .products__images .spotter {
+    height: 40px;
+    margin-bottom: 28px;
+  }
+
   .navbar_poppup .poppup__content .content__block .block__products .products__images img {
     height: 16px;
   }
@@ -7140,6 +7169,10 @@ a {
   .products .intro__content .content__info .info__exebenus img {
     max-width: 55vw;
     height: auto;
+  }
+
+  .products .intro__content .content__info .info__product .product__spotter {
+    height: 90px;
   }
 
   .products .intro__content .content__info .info__product img {
@@ -7552,6 +7585,10 @@ a {
   .main_page .intro__content .content__info .info__logos .logos__item {
     margin-right: 40px;
     height: 9px;
+  }
+
+  .main_page .intro__content .content__info .info__logos .logos__item-spotter {
+    height: 20px;
   }
 
   .main_page .intro__content .content__image .image__windmill {
@@ -8869,6 +8906,10 @@ a {
     max-width: 276px;
   }
 
+  .products .intro__content .content__info .info__product .product__spotter {
+    height: 70px;
+  }
+
   .products .intro__content .content__info {
     margin-top: -80px;
   }
@@ -9160,6 +9201,10 @@ a {
 
   .products .intro .container {
     padding: 0px 21px;
+  }
+
+  .products .intro__content .content__info .info__product .product__spotter {
+    height: 60px;
   }
 
   .products .intro__content .content__info {
